@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		5758BAE98BE2747CEBF13301 /* Pods_03_Tweeter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7209A76375717D0345194F2 /* Pods_03_Tweeter.framework */; };
+		FB2E62491F7E19D9008CCBF3 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2E62481F7E19D9008CCBF3 /* User.swift */; };
+		FB2E624B1F7E19E8008CCBF3 /* Tweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2E624A1F7E19E8008CCBF3 /* Tweet.swift */; };
 		FBD6165C1F7C7DE2007B8CE3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD6165B1F7C7DE2007B8CE3 /* AppDelegate.swift */; };
 		FBD616611F7C7DE2007B8CE3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBD6165F1F7C7DE2007B8CE3 /* Main.storyboard */; };
 		FBD616631F7C7DE2007B8CE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBD616621F7C7DE2007B8CE3 /* Assets.xcassets */; };
@@ -19,6 +21,8 @@
 		687400D6483E933D333A335A /* Pods-03 Tweeter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-03 Tweeter.release.xcconfig"; path = "Pods/Target Support Files/Pods-03 Tweeter/Pods-03 Tweeter.release.xcconfig"; sourceTree = "<group>"; };
 		E65E9FFDFE7F49A61FDEE932 /* Pods-03 Tweeter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-03 Tweeter.debug.xcconfig"; path = "Pods/Target Support Files/Pods-03 Tweeter/Pods-03 Tweeter.debug.xcconfig"; sourceTree = "<group>"; };
 		F7209A76375717D0345194F2 /* Pods_03_Tweeter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_03_Tweeter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB2E62481F7E19D9008CCBF3 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		FB2E624A1F7E19E8008CCBF3 /* Tweet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tweet.swift; sourceTree = "<group>"; };
 		FBD616581F7C7DE2007B8CE3 /* 03 Tweeter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "03 Tweeter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBD6165B1F7C7DE2007B8CE3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FBD616601F7C7DE2007B8CE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -57,6 +61,31 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		FB2E62451F7E16EB008CCBF3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FB2E62481F7E19D9008CCBF3 /* User.swift */,
+				FB2E624A1F7E19E8008CCBF3 /* Tweet.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		FB2E62461F7E16F5008CCBF3 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FBD90FEF1F7CA3B9002E9129 /* LoginViewController.swift */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		FB2E62471F7E1995008CCBF3 /* API */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = API;
+			path = ..;
+			sourceTree = "<group>";
+		};
 		FBD6164F1F7C7DE2007B8CE3 = {
 			isa = PBXGroup;
 			children = (
@@ -78,7 +107,9 @@
 		FBD6165A1F7C7DE2007B8CE3 /* 03 Tweeter */ = {
 			isa = PBXGroup;
 			children = (
-				FBD90FEF1F7CA3B9002E9129 /* LoginViewController.swift */,
+				FB2E62471F7E1995008CCBF3 /* API */,
+				FB2E62461F7E16F5008CCBF3 /* View Controllers */,
+				FB2E62451F7E16EB008CCBF3 /* Models */,
 				FBD6165B1F7C7DE2007B8CE3 /* AppDelegate.swift */,
 				FBD6165F1F7C7DE2007B8CE3 /* Main.storyboard */,
 				FBD616621F7C7DE2007B8CE3 /* Assets.xcassets */,
@@ -199,11 +230,13 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-03 Tweeter/Pods-03 Tweeter-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworkActivityLogger/AFNetworkActivityLogger.framework",
 				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
 				"${BUILT_PRODUCTS_DIR}/BDBOAuth1Manager/BDBOAuth1Manager.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworkActivityLogger.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BDBOAuth1Manager.framework",
 			);
@@ -221,6 +254,8 @@
 			files = (
 				FBD90FF01F7CA3B9002E9129 /* LoginViewController.swift in Sources */,
 				FBD6165C1F7C7DE2007B8CE3 /* AppDelegate.swift in Sources */,
+				FB2E62491F7E19D9008CCBF3 /* User.swift in Sources */,
+				FB2E624B1F7E19E8008CCBF3 /* Tweet.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
