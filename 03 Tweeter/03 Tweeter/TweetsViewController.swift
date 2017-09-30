@@ -14,7 +14,6 @@ class TweetsViewController: UIViewController/*,  UITableViewDelegate, UITableVie
     
     @IBOutlet weak var tableView: UITableView!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -52,5 +51,9 @@ class TweetsViewController: UIViewController/*,  UITableViewDelegate, UITableVie
         return cell
     }
  */
+    
+    @IBAction func onLogoutButton(_ sender: Any) {
+        TwitterClient.sharedInstance?.logout()
+    }
 
 }

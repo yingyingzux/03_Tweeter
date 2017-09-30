@@ -16,6 +16,8 @@ class User: NSObject {
     
     var dictionary: NSDictionary?
     
+    static let userDidLogoutNotification = "UserDidLogout"
+    
     init(dictionary: NSDictionary) {
         self.dictionary = dictionary
         
