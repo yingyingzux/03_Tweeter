@@ -13,6 +13,10 @@ class DetailsViewController: UIViewController {
     var tweet: Tweet!
     
     @IBOutlet weak var profileImageView: UIImageView!
+    
+    @IBOutlet weak var retweetAuthorIndicatorImageView: UIImageView!
+    @IBOutlet weak var retweetAuthorNameLabel: UILabel!
+    
     @IBOutlet weak var tweetAuthorNameLabel: UILabel!
     @IBOutlet weak var tweetHandleLabel: UILabel!
     @IBOutlet weak var textLabel: UILabel!
@@ -33,14 +37,17 @@ class DetailsViewController: UIViewController {
             profileImageView.image = UIImage(named:"bizimage-small.png")
         }
         
-        /*
         if tweet?.retweetAuthorName != nil {
-            retweetAuthorNameLabel.text = "\(tweet?.retweetAuthorName) Retweeted"
+            retweetAuthorIndicatorImageView.isHidden = false
+            retweetAuthorNameLabel.isHidden = false
+            
+            retweetAuthorNameLabel.text = "\((tweet?.retweetAuthorName)!) Retweeted"
         } else {
+            //need to adjust height & gap
+            
             retweetAuthorIndicatorImageView.isHidden = true
             retweetAuthorNameLabel.isHidden = true
         }
- */
         
         tweetAuthorNameLabel.text = tweet?.tweetAuthorName
         tweetHandleLabel.text = "@\(tweet?.tweetHandle ?? "")"

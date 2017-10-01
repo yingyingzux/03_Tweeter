@@ -27,6 +27,8 @@ class TweetCell: UITableViewCell {
     
     @IBOutlet weak var replyButton: UIButton!
     
+    @IBOutlet weak var replyCountLabel: UILabel!
+    
     @IBOutlet weak var retweetButton: UIButton!
     
     @IBOutlet weak var retweetCountLabel: UILabel!

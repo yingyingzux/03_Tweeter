@@ -63,10 +63,17 @@ class TweetsViewController: UIViewController,  UITableViewDelegate, UITableViewD
         } else {
             cell.profileImageView.image = UIImage(named:"bizimage-small.png")
         }
+    
         
         if tweet?.retweetAuthorName != nil {
-            cell.retweetAuthorNameLabel.text = "\(tweet?.retweetAuthorName) Retweeted"
+            cell.retweetAuthorIndicatorImageView.isHidden = false
+            cell.retweetAuthorNameLabel.isHidden = false
+            
+            cell.retweetAuthorNameLabel.text = "\((tweet?.retweetAuthorName)!) Retweeted"
         } else {
+            //need to adjust height & gap
+            //let screenSize: CGRect = UIScreen.main.bounds
+            
             cell.retweetAuthorIndicatorImageView.isHidden = true
             cell.retweetAuthorNameLabel.isHidden = true
         }

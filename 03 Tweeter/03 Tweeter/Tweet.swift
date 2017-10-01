@@ -18,36 +18,78 @@ class Tweet: NSObject {
     var timestamp: Date?
     var retweetCount: Int = 0
     var favoritesCount: Int = 0
+    
+    var retweetedStatusDictionary: NSDictionary?
+    var retweetedUserDictionary: NSDictionary?
+    
     var text: String?
     
     init(dictionary: NSDictionary) {
         
         userDictionary = dictionary["user"] as? NSDictionary
-        
-        let profileImageViewUrlString = userDictionary?["profile_image_url_https"] as? String
-        
-        if profileImageViewUrlString != nil {
-            profileImageViewUrl = URL(string:profileImageViewUrlString!)!
-        } else {
-            profileImageViewUrl = nil
-        }
-        
-        retweetAuthorName = dictionary["in_reply_to_screen_name"] as? String
-        
-        tweetAuthorName = userDictionary?["name"] as? String
-        tweetHandle = userDictionary?["screen_name"] as? String
-    
-        let timestampString = dictionary["created_at"] as? String
-        
-        if let timestampString = timestampString {
-            let formatter = DateFormatter()
-            formatter.dateFormat = "EEE MM d HH:mm:ss Z y"
-            timestamp = formatter.date(from: timestampString)
-        }
+        retweetedStatusDictionary = dictionary["retweeted_status"] as? NSDictionary
         
         retweetCount = (dictionary["retweet_count"] as? Int) ?? 0
-        favoritesCount = (dictionary["favorites_count"] as? Int) ?? 0
-        text = dictionary["text"] as? String
+        favoritesCount = (dictionary["favorite_count"] as? Int) ?? 0
+        
+        if retweetedStatusDictionary != nil { // retweetStatusDictionary exits
+            retweetedUserDictionary = retweetedStatusDictionary?["user"] as? NSDictionary
+            retweetAuthorName = userDictionary?["name"] as? String
+            
+            print("retweetAuthorName - aka userDictionary-name: \(retweetAuthorName)")
+            
+            let profileImageViewUrlString = retweetedUserDictionary?["profile_image_url_https"] as? String
+            
+            if profileImageViewUrlString != nil {
+                profileImageViewUrl = URL(string:profileImageViewUrlString!)!
+            } else {
+                profileImageViewUrl = nil
+            }
+            
+            
+            let timestampString = retweetedStatusDictionary!["created_at"] as? String
+            
+            if let timestampString = timestampString {
+                let formatter = DateFormatter()
+                formatter.dateFormat = "EEE MM d HH:mm:ss Z y"
+                timestamp = formatter.date(from: timestampString)
+            }
+            
+            tweetAuthorName = retweetedUserDictionary?["name"] as? String
+            
+            print("tweetAuthorName - aka retweetedUserDictionary: \(tweetAuthorName)")
+            
+            
+            tweetHandle = retweetedUserDictionary?["screen_name"] as? String
+            
+            text = retweetedStatusDictionary!["text"] as? String
+            
+        } else { // doesn't exist
+            let profileImageViewUrlString = userDictionary?["profile_image_url_https"] as? String
+            
+            if profileImageViewUrlString != nil {
+                profileImageViewUrl = URL(string:profileImageViewUrlString!)!
+            } else {
+                profileImageViewUrl = nil
+            }
+            
+            tweetAuthorName = userDictionary?["name"] as? String
+            tweetHandle = userDictionary?["screen_name"] as? String
+            
+            let timestampString = dictionary["created_at"] as? String
+            
+            if let timestampString = timestampString {
+                let formatter = DateFormatter()
+                formatter.dateFormat = "EEE MM d HH:mm:ss Z y"
+                timestamp = formatter.date(from: timestampString)
+            }
+
+            
+            text = dictionary["text"] as? String
+        }
+        
+        
+        //text = dictionary["text"] as? String
         
         
     }

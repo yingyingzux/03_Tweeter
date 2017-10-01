@@ -84,12 +84,37 @@ class TwitterClient: BDBOAuth1SessionManager {
             let dictionaries = response as! [NSDictionary]
             let tweets = Tweet.tweetsWithArray(dictionaries: dictionaries)
             
+            for tweet in tweets {
+                print ("tweet: \(dictionaries)")
+            }
+            
             success(tweets)
             
         }, failure: { (task: URLSessionDataTask?, error: Error) -> Void in
             failure(error)
         })
     }
+    /*
+    func postNewTweet(success: @escaping ([Tweet]) -> (), failure: @escaping (Error) -> ()) {
+        TwitterClient.sharedInstance?.get("1.1/statuses/home_timeline.json", parameters: nil, progress: nil, success: { (task: URLSessionDataTask, response: Any?) -> Void in
+            
+            //print("get timeline")
+            
+            let dictionaries = response as! [NSDictionary]
+            let tweets = Tweet.tweetsWithArray(dictionaries: dictionaries)
+            
+            for tweet in tweets {
+                print ("tweet: \(dictionaries)")
+            }
+            
+            success(tweets)
+            
+        }, failure: { (task: URLSessionDataTask?, error: Error) -> Void in
+            failure(error)
+        })
+    }
+ */
+    
 }
     
 

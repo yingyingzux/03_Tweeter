@@ -161,6 +161,7 @@
                                                 <constraint firstItem="Fie-om-uOI" firstAttribute="top" secondItem="Gcz-Kh-OQ2" secondAttribute="top" constant="8" id="B2B-xa-qX8"/>
                                                 <constraint firstItem="edL-yc-iyf" firstAttribute="leading" secondItem="Yzw-Bd-8Vg" secondAttribute="leading" id="Bgm-3I-0PE"/>
                                                 <constraint firstItem="Fie-om-uOI" firstAttribute="trailing" secondItem="ILA-J8-LDE" secondAttribute="trailing" id="Dwr-f9-wwB"/>
+                                                <constraint firstItem="Mfe-Kj-rdj" firstAttribute="leading" secondItem="nJE-8H-xHd" secondAttribute="trailing" constant="30" id="ETc-2Y-JiE"/>
                                                 <constraint firstItem="gJH-vg-5fM" firstAttribute="leading" secondItem="edL-yc-iyf" secondAttribute="trailing" constant="5" id="Eoq-If-89E"/>
                                                 <constraint firstItem="v3e-NF-c0g" firstAttribute="top" secondItem="ILA-J8-LDE" secondAttribute="top" id="EvE-NA-mZT"/>
                                                 <constraint firstItem="MPH-R9-V2B" firstAttribute="top" secondItem="ILA-J8-LDE" secondAttribute="top" id="LLc-KT-Mmq"/>
@@ -175,7 +176,6 @@
                                                 <constraint firstItem="ILA-J8-LDE" firstAttribute="top" secondItem="Fie-om-uOI" secondAttribute="bottom" constant="8" id="iUi-Xn-9y3"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="nJE-8H-xHd" secondAttribute="bottom" constant="-3.5" id="kPa-aP-JnO"/>
                                                 <constraint firstItem="v3e-NF-c0g" firstAttribute="leading" secondItem="gJH-vg-5fM" secondAttribute="trailing" constant="5" id="kaf-0F-Rfx"/>
-                                                <constraint firstItem="Mfe-Kj-rdj" firstAttribute="leading" secondItem="nJE-8H-xHd" secondAttribute="trailing" constant="30" id="l9V-lR-M96"/>
                                                 <constraint firstItem="MPH-R9-V2B" firstAttribute="leading" secondItem="v3e-NF-c0g" secondAttribute="trailing" constant="5" id="oCg-y9-2o9"/>
                                                 <constraint firstItem="nJE-8H-xHd" firstAttribute="baseline" secondItem="0W4-Hj-Y2q" secondAttribute="baseline" id="sCg-2g-pJs"/>
                                                 <constraint firstItem="0W4-Hj-Y2q" firstAttribute="leading" secondItem="PUv-Jt-c4b" secondAttribute="trailing" constant="30" id="uDz-oY-zop"/>
@@ -466,6 +466,8 @@
                         <outlet property="favButton" destination="ufc-vL-dJq" id="nt8-Zz-tWZ"/>
                         <outlet property="favCountLabel" destination="15g-le-kut" id="MWM-om-EgO"/>
                         <outlet property="profileImageView" destination="p24-z5-Ypv" id="7nc-SC-RBJ"/>
+                        <outlet property="retweetAuthorIndicatorImageView" destination="WJD-az-9d2" id="BwH-MS-BSg"/>
+                        <outlet property="retweetAuthorNameLabel" destination="Uec-OM-UVa" id="FTP-Mb-KWC"/>
                         <outlet property="retweetButton" destination="7cN-uy-ZRf" id="sW0-oS-u4G"/>
                         <outlet property="retweetCountLabel" destination="mFc-0Z-dSJ" id="rvF-an-mAX"/>
                         <outlet property="textLabel" destination="eeB-sQ-vLc" id="p8l-TA-PSD"/>
