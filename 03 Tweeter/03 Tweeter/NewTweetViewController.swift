@@ -35,12 +35,10 @@ class NewTweetViewController: UIViewController, UITextViewDelegate {
         tweetHandleLabel.text = user!.screenname
         
         
-        newTweetTextView.text = ""
+        //newTweetTextView.text = ""
         //newTweetTextView.textColor = UIColor.lightGray
         
-        
         newTweetTextView.becomeFirstResponder()
-        newTweetTextView.selectedTextRange = newTweetTextView.textRange(from: newTweetTextView.beginningOfDocument, to: newTweetTextView.beginningOfDocument)
     }
     
     @IBAction func onCancelButton(_ sender: Any) {
@@ -48,7 +46,8 @@ class NewTweetViewController: UIViewController, UITextViewDelegate {
     }
 
     @IBAction func onTweetButton(_ sender: Any) {
-    
+        TwitterClient.sharedInstance?.postNewTweet(text: newTweetTextView.text)
+        dismiss(animated: true, completion: nil)
     }
     
     override func awakeFromNib() {

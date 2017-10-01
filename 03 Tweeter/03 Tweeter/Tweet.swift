@@ -36,7 +36,7 @@ class Tweet: NSObject {
             retweetedUserDictionary = retweetedStatusDictionary?["user"] as? NSDictionary
             retweetAuthorName = userDictionary?["name"] as? String
             
-            print("retweetAuthorName - aka userDictionary-name: \(retweetAuthorName)")
+            //print("retweetAuthorName - aka userDictionary-name: \(retweetAuthorName)")
             
             let profileImageViewUrlString = retweetedUserDictionary?["profile_image_url_https"] as? String
             
@@ -57,7 +57,7 @@ class Tweet: NSObject {
             
             tweetAuthorName = retweetedUserDictionary?["name"] as? String
             
-            print("tweetAuthorName - aka retweetedUserDictionary: \(tweetAuthorName)")
+            //print("tweetAuthorName - aka retweetedUserDictionary: \(tweetAuthorName)")
             
             
             tweetHandle = retweetedUserDictionary?["screen_name"] as? String

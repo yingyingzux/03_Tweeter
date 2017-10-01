@@ -84,37 +84,39 @@ class TwitterClient: BDBOAuth1SessionManager {
             let dictionaries = response as! [NSDictionary]
             let tweets = Tweet.tweetsWithArray(dictionaries: dictionaries)
             
+            /*
             for tweet in tweets {
                 print ("tweet: \(dictionaries)")
             }
-            
-            success(tweets)
-            
-        }, failure: { (task: URLSessionDataTask?, error: Error) -> Void in
-            failure(error)
-        })
-    }
-    /*
-    func postNewTweet(success: @escaping ([Tweet]) -> (), failure: @escaping (Error) -> ()) {
-        TwitterClient.sharedInstance?.get("1.1/statuses/home_timeline.json", parameters: nil, progress: nil, success: { (task: URLSessionDataTask, response: Any?) -> Void in
-            
-            //print("get timeline")
-            
-            let dictionaries = response as! [NSDictionary]
-            let tweets = Tweet.tweetsWithArray(dictionaries: dictionaries)
-            
-            for tweet in tweets {
-                print ("tweet: \(dictionaries)")
-            }
-            
-            success(tweets)
-            
-        }, failure: { (task: URLSessionDataTask?, error: Error) -> Void in
-            failure(error)
-        })
-    }
  */
+            
+            success(tweets)
+            
+        }, failure: { (task: URLSessionDataTask?, error: Error) -> Void in
+            failure(error)
+        })
+    }
+    
+    func postNewTweet(text: String) {
+        let params = ["status": text]
+        TwitterClient.sharedInstance?.post("/1.1/statuses/update.json", parameters: params, progress: nil, success: { (task: URLSessionDataTask, response: Any?) -> Void in
+            // add code for success
+            
+        }, failure: { (task: URLSessionDataTask?, error: Error) in
+            print("\(error.localizedDescription)")
+        })
+        
+     }
     
 }
-    
+
+//let dictionaries = response as! [NSDictionary]
+//let tweets = Tweet.tweetsWithArray(dictionaries: dictionaries)
+
+/*
+ for tweet in tweets {
+ print("post new tweet: \(tweet)")
+ }
+ */
+
 
