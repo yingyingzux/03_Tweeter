@@ -10,9 +10,49 @@ import UIKit
 
 class DetailsViewController: UIViewController {
 
+    var tweet: Tweet!
+    
+    @IBOutlet weak var profileImageView: UIImageView!
+    @IBOutlet weak var tweetAuthorNameLabel: UILabel!
+    @IBOutlet weak var tweetHandleLabel: UILabel!
+    @IBOutlet weak var textLabel: UILabel!
+    @IBOutlet weak var timestampLabel: UILabel!
+    @IBOutlet weak var retweetCountLabel: UILabel!
+    @IBOutlet weak var favCountLabel: UILabel!
+    
+    @IBOutlet weak var retweetButton: UIButton!
+    @IBOutlet weak var favButton: UIButton!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        if tweet?.profileImageViewUrl != nil {
+            profileImageView.setImageWith((tweet?.profileImageViewUrl!)!)
+        } else {
+            profileImageView.image = UIImage(named:"bizimage-small.png")
+        }
+        
+        /*
+        if tweet?.retweetAuthorName != nil {
+            retweetAuthorNameLabel.text = "\(tweet?.retweetAuthorName) Retweeted"
+        } else {
+            retweetAuthorIndicatorImageView.isHidden = true
+            retweetAuthorNameLabel.isHidden = true
+        }
+ */
+        
+        tweetAuthorNameLabel.text = tweet?.tweetAuthorName
+        tweetHandleLabel.text = "@\(tweet?.tweetHandle ?? "")"
+        timestampLabel.text = "\((tweet?.timestamp)!)"
+        
+        //replyButton =
+        //retweetButton =
+        retweetCountLabel.text = "\(tweet?.retweetCount ?? 0)"
+        //favButton
+        favCountLabel.text = "\(tweet?.favoritesCount ?? 0)"
+        
+        textLabel.text = tweet?.text
         // Do any additional setup after loading the view.
     }
 
@@ -21,15 +61,12 @@ class DetailsViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        // Initialization code
+        
+        profileImageView?.layer.cornerRadius = 3
+        profileImageView?.clipsToBounds = true
     }
-    */
-
+    
 }

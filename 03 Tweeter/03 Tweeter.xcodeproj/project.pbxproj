@@ -71,6 +71,14 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		FB2BFBF81F8084E700A06745 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FB2BFBF21F8004D000A06745 /* TweetCell.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
 		FB2E62451F7E16EB008CCBF3 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -122,14 +130,14 @@
 			isa = PBXGroup;
 			children = (
 				FB2E62471F7E1995008CCBF3 /* API */,
-				FB2E62461F7E16F5008CCBF3 /* View Controllers */,
 				FB2E62451F7E16EB008CCBF3 /* Models */,
+				FB2E62461F7E16F5008CCBF3 /* View Controllers */,
+				FB2BFBF81F8084E700A06745 /* Views */,
 				FBD6165B1F7C7DE2007B8CE3 /* AppDelegate.swift */,
 				FBD6165F1F7C7DE2007B8CE3 /* Main.storyboard */,
 				FBD616621F7C7DE2007B8CE3 /* Assets.xcassets */,
 				FBD616641F7C7DE2007B8CE3 /* LaunchScreen.storyboard */,
 				FBD616671F7C7DE2007B8CE3 /* Info.plist */,
-				FB2BFBF21F8004D000A06745 /* TweetCell.swift */,
 			);
 			path = "03 Tweeter";
 			sourceTree = "<group>";

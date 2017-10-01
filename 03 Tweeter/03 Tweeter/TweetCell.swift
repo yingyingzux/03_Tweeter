@@ -10,9 +10,37 @@ import UIKit
 
 class TweetCell: UITableViewCell {
 
+    
+    @IBOutlet weak var profileImageView: UIImageView!
+    
+    @IBOutlet weak var retweetAuthorIndicatorImageView: UIImageView!
+    
+    @IBOutlet weak var retweetAuthorNameLabel: UILabel!
+    
+    @IBOutlet weak var tweetAuthorNameLabel: UILabel!
+    
+    @IBOutlet weak var tweetHandleLabel: UILabel!
+    
+    @IBOutlet weak var timestampLabel: UILabel!
+    
+    @IBOutlet weak var TweetTextLabel: UILabel!
+    
+    @IBOutlet weak var replyButton: UIButton!
+    
+    @IBOutlet weak var retweetButton: UIButton!
+    
+    @IBOutlet weak var retweetCountLabel: UILabel!
+    
+    @IBOutlet weak var favButton: UIButton!
+    
+    @IBOutlet weak var favCountLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        
+        profileImageView.layer.cornerRadius = 3
+        profileImageView.clipsToBounds = true
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
