@@ -13,6 +13,8 @@ class TwitterClient: BDBOAuth1SessionManager {
     
     static let sharedInstance = TwitterClient(baseURL: NSURL(string: "https://api.twitter.com")! as URL!, consumerKey: "c6swN7N237KLpzIPZcSpaUjBm", consumerSecret: "PKN22t0T4XnBDhoT54N5mKdF0GMDcogsItko5mp3IrAx5qOEwm")
     
+    //static let isThereNewTweet = false
+    
     var loginSuccess: (() -> ())?
     var loginFailure: ((Error) -> ())?
     
@@ -88,7 +90,7 @@ class TwitterClient: BDBOAuth1SessionManager {
             for tweet in tweets {
                 print ("tweet: \(dictionaries)")
             }
- */
+             */
             
             success(tweets)
             
@@ -97,16 +99,90 @@ class TwitterClient: BDBOAuth1SessionManager {
         })
     }
     
-    func postNewTweet(text: String) {
+    func postNewTweet(text: String, success: @escaping (Tweet) -> (), failure: @escaping (Error) -> ()) {
         let params = ["status": text]
         TwitterClient.sharedInstance?.post("/1.1/statuses/update.json", parameters: params, progress: nil, success: { (task: URLSessionDataTask, response: Any?) -> Void in
             // add code for success
             
-        }, failure: { (task: URLSessionDataTask?, error: Error) in
+            let tweetDictionary = response as! NSDictionary
+            let newTweet = Tweet(dictionary: tweetDictionary)
+            
+            success(newTweet)
+            
+            print("post new tweet success")
+            
+        } as! (URLSessionDataTask, Any?) -> Void, failure: { (task: URLSessionDataTask?, error: Error) in
             print("\(error.localizedDescription)")
         })
         
      }
+    
+    func favTweet(id: Int, success: @escaping (Tweet) -> (), failure: @escaping (Error) -> ()) {
+        let params = ["id": id]
+        
+        TwitterClient.sharedInstance?.post("/1.1/favorites/create.json", parameters: params, progress: nil, success: { (task: URLSessionDataTask, response: Any?) -> Void in
+            
+            let tweetDictionary = response as! NSDictionary
+            let favedTweet = Tweet(dictionary: tweetDictionary)
+            
+            success(favedTweet)
+            
+            print("Fav a tweet success")
+            
+        }, failure: { (task: URLSessionDataTask?, error: Error) in
+            print("\(error.localizedDescription)")
+        })
+    }
+    
+    func unFavTweet(id: Int, success: @escaping (Tweet) -> (), failure: @escaping (Error) -> ()) {
+        let params = ["id": id]
+        
+        TwitterClient.sharedInstance?.post("/1.1/favorites/destroy.json", parameters: params, progress: nil, success: { (task: URLSessionDataTask, response: Any?) -> Void in
+            
+            let tweetDictionary = response as! NSDictionary
+            let unFavedTweet = Tweet(dictionary: tweetDictionary)
+            
+            success(unFavedTweet)
+            
+            print("Unfav a tweet success")
+            
+        }, failure: { (task: URLSessionDataTask?, error: Error) in
+            print("\(error.localizedDescription)")
+        })
+    }
+
+    
+    func retweet(id: Int, success: @escaping (Tweet) -> (), failure: @escaping (Error) -> ()) {
+        let params = ["id": id]
+        
+        TwitterClient.sharedInstance?.post("/1.1/statuses/retweet/:id.json", parameters: params, progress: nil, success: { (task: URLSessionDataTask, response: Any?) -> Void in
+            
+            let tweetDictionary = response as! NSDictionary
+            let retweetedTweet = Tweet(dictionary: tweetDictionary)
+            
+            success(retweetedTweet)
+            print("Retweet a tweet success")
+            
+        }, failure: { (task: URLSessionDataTask?, error: Error) in
+            print("\(error.localizedDescription)")
+        })
+    }
+    
+    func unRetweet(id: Int, success: @escaping (Tweet) -> (), failure: @escaping (Error) -> ()) {
+        let params = ["id": id]
+        
+        TwitterClient.sharedInstance?.post("/1.1/statuses/unretweet/:id.json", parameters: params, progress: nil, success: { (task: URLSessionDataTask, response: Any?) -> Void in
+            
+            let tweetDictionary = response as! NSDictionary
+            let unRetweetedTweet = Tweet(dictionary: tweetDictionary)
+            
+            success(unRetweetedTweet)
+            print("unRetweet a tweet success")
+            
+        }, failure: { (task: URLSessionDataTask?, error: Error) in
+            print("\(error.localizedDescription)")
+        })
+    }
     
 }
 

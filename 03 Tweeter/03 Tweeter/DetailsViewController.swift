@@ -12,6 +12,9 @@ class DetailsViewController: UIViewController {
 
     var tweet: Tweet!
     
+    var isFaved: Bool = false
+    var isRetweeted: Bool = false
+    
     @IBOutlet weak var profileImageView: UIImageView!
     
     @IBOutlet weak var retweetAuthorIndicatorImageView: UIImageView!
@@ -74,6 +77,73 @@ class DetailsViewController: UIViewController {
         
         profileImageView?.layer.cornerRadius = 3
         profileImageView?.clipsToBounds = true
+    }
+    
+    @IBAction func onFavButton(_ sender: Any) {
+        //print("default fav count: \(self.tweet.favoritesCount)")
+        
+        if self.isFaved == false {
+        
+            TwitterClient.sharedInstance?.favTweet(id: tweet.id, success: { (tweet: Tweet) in
+                
+                self.tweet = tweet
+                self.favButton.setImage(UIImage(named:"faved.png"), for: .normal)
+                self.favCountLabel.text = "\(tweet.favoritesCount)"
+                //print("Faved! count: \(self.tweet.favoritesCount)")
+                self.isFaved = true
+                
+            }, failure: { (error: Error) in
+                print(error)
+            })
+        } else if self.isFaved == true {
+            TwitterClient.sharedInstance?.unFavTweet(id: tweet.id, success: { (tweet: Tweet) in
+                
+                self.tweet = tweet
+                self.favButton.setImage(UIImage(named:"fav.png"), for: .normal)
+                self.favCountLabel.text = "\(tweet.favoritesCount)"
+                //print("Unfaved! fav count: \(self.tweet.favoritesCount)")
+                self.isFaved = false
+                
+            }, failure: { (error: Error) in
+                print(error)
+            })
+    
+        }
+    }
+    
+    @IBAction func onRetweetButton(_ sender: Any) {
+        print("default retweet count: \(self.tweet.retweetCount)")
+        
+        if self.isRetweeted == false {
+            
+            TwitterClient.sharedInstance?.retweet(id: tweet.id, success: { (tweet: Tweet) in
+                
+                self.tweet = tweet
+                self.retweetButton.setImage(UIImage(named:"retweeted.png"), for: .normal)
+                self.retweetCountLabel.text = "\(tweet.retweetCount)"
+                print("Retweeted! count: \(self.tweet.retweetCount)")
+                self.isFaved = true
+                
+            }, failure: { (error: Error) in
+                //print("tweet.id:\(self.tweet.id)")
+                //print("error in retweet func")
+                print(error)
+            })
+        } else if self.isRetweeted == true {
+            
+            TwitterClient.sharedInstance?.unRetweet(id: tweet.id, success: { (tweet: Tweet) in
+                
+                self.tweet = tweet
+                self.retweetButton.setImage(UIImage(named:"retweet.png"), for: .normal)
+                self.retweetCountLabel.text = "\(tweet.retweetCount)"
+                //print("Unfaved! fav count: \(self.tweet.favoritesCount)")
+                self.isFaved = false
+                
+            }, failure: { (error: Error) in
+                print(error)
+            })
+            
+        }
     }
     
 }

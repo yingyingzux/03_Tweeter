@@ -1,0 +1,2654 @@
+tweet: [{
+    contributors = "<null>";
+    coordinates = "<null>";
+    "created_at" = "Mon Oct 02 00:40:06 +0000 2017";
+    entities =     {
+        hashtags =         (
+        );
+        media =         (
+                        {
+                "display_url" = "pic.twitter.com/0mT80ha61G";
+                "expanded_url" = "https://twitter.com/Reuters/status/914651168466505729/photo/1";
+                id = 914651166272741377;
+                "id_str" = 914651166272741377;
+                indices =                 (
+                    92,
+                    115
+                );
+                "media_url" = "http://pbs.twimg.com/media/DLF-Y8MVYAEetrt.jpg";
+                "media_url_https" = "https://pbs.twimg.com/media/DLF-Y8MVYAEetrt.jpg";
+                sizes =                 {
+                    large =                     {
+                        h = 545;
+                        resize = fit;
+                        w = 802;
+                    };
+                    medium =                     {
+                        h = 545;
+                        resize = fit;
+                        w = 802;
+                    };
+                    small =                     {
+                        h = 462;
+                        resize = fit;
+                        w = 680;
+                    };
+                    thumb =                     {
+                        h = 150;
+                        resize = crop;
+                        w = 150;
+                    };
+                };
+                type = photo;
+                url = "https://t.co/0mT80ha61G";
+            }
+        );
+        symbols =         (
+        );
+        urls =         (
+                        {
+                "display_url" = "reut.rs/2xThmY2";
+                "expanded_url" = "http://reut.rs/2xThmY2";
+                indices =                 (
+                    68,
+                    91
+                );
+                url = "https://t.co/v1v4JZ4LAz";
+            }
+        );
+        "user_mentions" =         (
+        );
+    };
+    "extended_entities" =     {
+        media =         (
+                        {
+                "display_url" = "pic.twitter.com/0mT80ha61G";
+                "expanded_url" = "https://twitter.com/Reuters/status/914651168466505729/photo/1";
+                id = 914651166272741377;
+                "id_str" = 914651166272741377;
+                indices =                 (
+                    92,
+                    115
+                );
+                "media_url" = "http://pbs.twimg.com/media/DLF-Y8MVYAEetrt.jpg";
+                "media_url_https" = "https://pbs.twimg.com/media/DLF-Y8MVYAEetrt.jpg";
+                sizes =                 {
+                    large =                     {
+                        h = 545;
+                        resize = fit;
+                        w = 802;
+                    };
+                    medium =                     {
+                        h = 545;
+                        resize = fit;
+                        w = 802;
+                    };
+                    small =                     {
+                        h = 462;
+                        resize = fit;
+                        w = 680;
+                    };
+                    thumb =                     {
+                        h = 150;
+                        resize = crop;
+                        w = 150;
+                    };
+                };
+                type = photo;
+                url = "https://t.co/0mT80ha61G";
+            }
+        );
+    };
+    "favorite_count" = 1;
+    favorited = 0;
+    geo = "<null>";
+    id = 914651168466505729;
+    "id_str" = 914651168466505729;
+    "in_reply_to_screen_name" = "<null>";
+    "in_reply_to_status_id" = "<null>";
+    "in_reply_to_status_id_str" = "<null>";
+    "in_reply_to_user_id" = "<null>";
+    "in_reply_to_user_id_str" = "<null>";
+    "is_quote_status" = 0;
+    lang = en;
+    place = "<null>";
+    "possibly_sensitive" = 0;
+    "possibly_sensitive_appealable" = 0;
+    "retweet_count" = 3;
+    retweeted = 0;
+    source = "<a href=\"http://trueanthem.com/\" rel=\"nofollow\">trueAnthem</a>";
+    text = "Equifax reviews its top lawyer's role in executive stock sales: WSJ https://t.co/v1v4JZ4LAz https://t.co/0mT80ha61G";
+    truncated = 0;
+    user =     {
+        "contributors_enabled" = 0;
+        "created_at" = "Tue Mar 20 17:46:05 +0000 2007";
+        "default_profile" = 0;
+        "default_profile_image" = 0;
+        description = "Top and breaking news, pictures, and videos from Reuters.";
+        entities =         {
+            description =             {
+                urls =                 (
+                );
+            };
+            url =             {
+                urls =                 (
+                                        {
+                        "display_url" = "reuters.com";
+                        "expanded_url" = "http://www.reuters.com";
+                        indices =                         (
+                            0,
+                            22
+                        );
+                        url = "http://t.co/BmHxhkm3Mh";
+                    }
+                );
+            };
+        };
+        "favourites_count" = 813;
+        "follow_request_sent" = 0;
+        "followers_count" = 18791826;
+        following = 1;
+        "friends_count" = 1061;
+        "geo_enabled" = 0;
+        "has_extended_profile" = 0;
+        id = 1652541;
+        "id_str" = 1652541;
+        "is_translation_enabled" = 1;
+        "is_translator" = 0;
+        lang = en;
+        "listed_count" = 111892;
+        location = "Around the world";
+        name = "Reuters Top News";
+        notifications = 0;
+        "profile_background_color" = 444444;
+        "profile_background_image_url" = "http://pbs.twimg.com/profile_background_images/735542174/340f8869cdcabbcc436096587143cc38.png";
+        "profile_background_image_url_https" = "https://pbs.twimg.com/profile_background_images/735542174/340f8869cdcabbcc436096587143cc38.png";
+        "profile_background_tile" = 0;
+        "profile_banner_url" = "https://pbs.twimg.com/profile_banners/1652541/1473859324";
+        "profile_image_url" = "http://pbs.twimg.com/profile_images/877554927932891136/ZBEs235N_normal.jpg";
+        "profile_image_url_https" = "https://pbs.twimg.com/profile_images/877554927932891136/ZBEs235N_normal.jpg";
+        "profile_link_color" = 006F97;
+        "profile_sidebar_border_color" = 000000;
+        "profile_sidebar_fill_color" = F5F5F5;
+        "profile_text_color" = 000000;
+        "profile_use_background_image" = 1;
+        protected = 0;
+        "screen_name" = Reuters;
+        "statuses_count" = 211068;
+        "time_zone" = "Eastern Time (US & Canada)";
+        "translator_type" = regular;
+        url = "http://t.co/BmHxhkm3Mh";
+        "utc_offset" = "-14400";
+        verified = 1;
+    };
+}, {
+    contributors = "<null>";
+    coordinates = "<null>";
+    "created_at" = "Mon Oct 02 00:40:02 +0000 2017";
+    entities =     {
+        hashtags =         (
+                        {
+                indices =                 (
+                    15,
+                    24
+                );
+                text = mistakes;
+            }
+        );
+        media =         (
+                        {
+                "display_url" = "pic.twitter.com/Otjn6frYkS";
+                "expanded_url" = "https://twitter.com/jtodonnell/status/914651153182359552/photo/1";
+                id = 914651148094771200;
+                "id_str" = 914651148094771200;
+                indices =                 (
+                    81,
+                    104
+                );
+                "media_url" = "http://pbs.twimg.com/media/DLF-X4eXkAABlRk.jpg";
+                "media_url_https" = "https://pbs.twimg.com/media/DLF-X4eXkAABlRk.jpg";
+                sizes =                 {
+                    large =                     {
+                        h = 400;
+                        resize = fit;
+                        w = 744;
+                    };
+                    medium =                     {
+                        h = 400;
+                        resize = fit;
+                        w = 744;
+                    };
+                    small =                     {
+                        h = 366;
+                        resize = fit;
+                        w = 680;
+                    };
+                    thumb =                     {
+                        h = 150;
+                        resize = crop;
+                        w = 150;
+                    };
+                };
+                type = photo;
+                url = "https://t.co/Otjn6frYkS";
+            }
+        );
+        symbols =         (
+        );
+        urls =         (
+                        {
+                "display_url" = "bit.ly/mistakeswemake";
+                "expanded_url" = "http://bit.ly/mistakeswemake";
+                indices =                 (
+                    57,
+                    80
+                );
+                url = "https://t.co/LBsB9odnwF";
+            }
+        );
+        "user_mentions" =         (
+        );
+    };
+    "extended_entities" =     {
+        media =         (
+                        {
+                "display_url" = "pic.twitter.com/Otjn6frYkS";
+                "expanded_url" = "https://twitter.com/jtodonnell/status/914651153182359552/photo/1";
+                id = 914651148094771200;
+                "id_str" = 914651148094771200;
+                indices =                 (
+                    81,
+                    104
+                );
+                "media_url" = "http://pbs.twimg.com/media/DLF-X4eXkAABlRk.jpg";
+                "media_url_https" = "https://pbs.twimg.com/media/DLF-X4eXkAABlRk.jpg";
+                sizes =                 {
+                    large =                     {
+                        h = 400;
+                        resize = fit;
+                        w = 744;
+                    };
+                    medium =                     {
+                        h = 400;
+                        resize = fit;
+                        w = 744;
+                    };
+                    small =                     {
+                        h = 366;
+                        resize = fit;
+                        w = 680;
+                    };
+                    thumb =                     {
+                        h = 150;
+                        resize = crop;
+                        w = 150;
+                    };
+                };
+                type = photo;
+                url = "https://t.co/Otjn6frYkS";
+            }
+        );
+    };
+    "favorite_count" = 0;
+    favorited = 0;
+    geo = "<null>";
+    id = 914651153182359552;
+    "id_str" = 914651153182359552;
+    "in_reply_to_screen_name" = "<null>";
+    "in_reply_to_status_id" = "<null>";
+    "in_reply_to_status_id_str" = "<null>";
+    "in_reply_to_user_id" = "<null>";
+    "in_reply_to_user_id_str" = "<null>";
+    "is_quote_status" = 0;
+    lang = en;
+    place = "<null>";
+    "possibly_sensitive" = 0;
+    "possibly_sensitive_appealable" = 0;
+    "retweet_count" = 0;
+    retweeted = 0;
+    source = "<a href=\"http://meetedgar.com\" rel=\"nofollow\">Meet Edgar</a>";
+    text = "Everyone makes #mistakes, but have you made these twice? https://t.co/LBsB9odnwF https://t.co/Otjn6frYkS";
+    truncated = 0;
+    user =     {
+        "contributors_enabled" = 0;
+        "created_at" = "Wed Mar 05 23:08:00 +0000 2008";
+        "default_profile" = 0;
+        "default_profile_image" = 0;
+        description = "Founder & CEO at https://t.co/MdwqNv2OsI | 15+ Yrs HR, Recruiting, Career Coaching | Fitness Junkie = @EatDrinkBFit";
+        entities =         {
+            description =             {
+                urls =                 (
+                                        {
+                        "display_url" = "WorkItDaily.com";
+                        "expanded_url" = "http://WorkItDaily.com";
+                        indices =                         (
+                            17,
+                            40
+                        );
+                        url = "https://t.co/MdwqNv2OsI";
+                    }
+                );
+            };
+            url =             {
+                urls =                 (
+                                        {
+                        "display_url" = "WorkItDaily.com";
+                        "expanded_url" = "http://www.WorkItDaily.com";
+                        indices =                         (
+                            0,
+                            23
+                        );
+                        url = "https://t.co/5usr8eavC3";
+                    }
+                );
+            };
+        };
+        "favourites_count" = 23925;
+        "follow_request_sent" = 0;
+        "followers_count" = 31939;
+        following = 1;
+        "friends_count" = 134;
+        "geo_enabled" = 1;
+        "has_extended_profile" = 0;
+        id = 14085655;
+        "id_str" = 14085655;
+        "is_translation_enabled" = 0;
+        "is_translator" = 0;
+        lang = en;
+        "listed_count" = 1412;
+        location = Boston;
+        name = "J.T. O'Donnell";
+        notifications = 0;
+        "profile_background_color" = 131516;
+        "profile_background_image_url" = "http://abs.twimg.com/images/themes/theme14/bg.gif";
+        "profile_background_image_url_https" = "https://abs.twimg.com/images/themes/theme14/bg.gif";
+        "profile_background_tile" = 1;
+        "profile_banner_url" = "https://pbs.twimg.com/profile_banners/14085655/1472657743";
+        "profile_image_url" = "http://pbs.twimg.com/profile_images/880393201512796160/PGzJGQUO_normal.jpg";
+        "profile_image_url_https" = "https://pbs.twimg.com/profile_images/880393201512796160/PGzJGQUO_normal.jpg";
+        "profile_link_color" = 009999;
+        "profile_sidebar_border_color" = EEEEEE;
+        "profile_sidebar_fill_color" = EFEFEF;
+        "profile_text_color" = 333333;
+        "profile_use_background_image" = 1;
+        protected = 0;
+        "screen_name" = jtodonnell;
+        "statuses_count" = 40088;
+        "time_zone" = "Eastern Time (US & Canada)";
+        "translator_type" = none;
+        url = "https://t.co/5usr8eavC3";
+        "utc_offset" = "-14400";
+        verified = 0;
+    };
+}, {
+    contributors = "<null>";
+    coordinates = "<null>";
+    "created_at" = "Mon Oct 02 00:40:01 +0000 2017";
+    entities =     {
+        hashtags =         (
+        );
+        symbols =         (
+        );
+        urls =         (
+                        {
+                "display_url" = "twitter.com/i/web/status/9\U2026";
+                "expanded_url" = "https://twitter.com/i/web/status/914651146995863552";
+                indices =                 (
+                    111,
+                    134
+                );
+                url = "https://t.co/dtBS62YK89";
+            }
+        );
+        "user_mentions" =         (
+        );
+    };
+    "favorite_count" = 19;
+    favorited = 0;
+    geo = "<null>";
+    id = 914651146995863552;
+    "id_str" = 914651146995863552;
+    "in_reply_to_screen_name" = "<null>";
+    "in_reply_to_status_id" = "<null>";
+    "in_reply_to_status_id_str" = "<null>";
+    "in_reply_to_user_id" = "<null>";
+    "in_reply_to_user_id_str" = "<null>";
+    "is_quote_status" = 0;
+    lang = en;
+    place = "<null>";
+    "possibly_sensitive" = 0;
+    "possibly_sensitive_appealable" = 0;
+    "retweet_count" = 15;
+    retweeted = 0;
+    source = "<a href=\"https://www.sprinklr.com\" rel=\"nofollow\">Sprinklr</a>";
+    text = "After 27 years in space, the Hubble is sending back its most beautiful and revealing images from the universe\U2026 https://t.co/dtBS62YK89";
+    truncated = 1;
+    user =     {
+        "contributors_enabled" = 0;
+        "created_at" = "Thu Jun 05 00:54:31 +0000 2008";
+        "default_profile" = 0;
+        "default_profile_image" = 0;
+        description = "Your source for original reporting and trusted news.";
+        entities =         {
+            description =             {
+                urls =                 (
+                );
+            };
+            url =             {
+                urls =                 (
+                                        {
+                        "display_url" = "CBSNews.com";
+                        "expanded_url" = "http://CBSNews.com";
+                        indices =                         (
+                            0,
+                            23
+                        );
+                        url = "https://t.co/VGut7r2Vg5";
+                    }
+                );
+            };
+        };
+        "favourites_count" = 270;
+        "follow_request_sent" = 0;
+        "followers_count" = 6142834;
+        following = 1;
+        "friends_count" = 430;
+        "geo_enabled" = 0;
+        "has_extended_profile" = 0;
+        id = 15012486;
+        "id_str" = 15012486;
+        "is_translation_enabled" = 1;
+        "is_translator" = 0;
+        lang = en;
+        "listed_count" = 46326;
+        location = "New York, NY";
+        name = "CBS News";
+        notifications = 0;
+        "profile_background_color" = D9DADA;
+        "profile_background_image_url" = "http://pbs.twimg.com/profile_background_images/736106551/37bf1f784305fe4a9c7e9105772c6e1a.jpeg";
+        "profile_background_image_url_https" = "https://pbs.twimg.com/profile_background_images/736106551/37bf1f784305fe4a9c7e9105772c6e1a.jpeg";
+        "profile_background_tile" = 0;
+        "profile_banner_url" = "https://pbs.twimg.com/profile_banners/15012486/1503494095";
+        "profile_image_url" = "http://pbs.twimg.com/profile_images/645966750941626368/d0Q4voGK_normal.jpg";
+        "profile_image_url_https" = "https://pbs.twimg.com/profile_images/645966750941626368/d0Q4voGK_normal.jpg";
+        "profile_link_color" = B12124;
+        "profile_sidebar_border_color" = FFFFFF;
+        "profile_sidebar_fill_color" = EAEDF0;
+        "profile_text_color" = 000000;
+        "profile_use_background_image" = 1;
+        protected = 0;
+        "screen_name" = CBSNews;
+        "statuses_count" = 144186;
+        "time_zone" = "Eastern Time (US & Canada)";
+        "translator_type" = none;
+        url = "https://t.co/VGut7r2Vg5";
+        "utc_offset" = "-14400";
+        verified = 1;
+    };
+}, {
+    contributors = "<null>";
+    coordinates =     {
+        coordinates =         (
+            "139.7699",
+            "36.8505"
+        );
+        type = Point;
+    };
+    "created_at" = "Mon Oct 02 00:39:23 +0000 2017";
+    entities =     {
+        hashtags =         (
+        );
+        symbols =         (
+        );
+        urls =         (
+                        {
+                "display_url" = "maps.google.co.jp/maps?f=q&hl=ja\U2026";
+                "expanded_url" = "http://maps.google.co.jp/maps?f=q&hl=ja&geocode=&q=36.8505,139.7699&ie=UTF8&ll=36.8505,139.7699&z=6";
+                indices =                 (
+                    97,
+                    120
+                );
+                url = "https://t.co/ngTkCqCfvf";
+            }
+        );
+        "user_mentions" =         (
+        );
+    };
+    "favorite_count" = 0;
+    favorited = 0;
+    geo =     {
+        coordinates =         (
+            "36.8505",
+            "139.7699"
+        );
+        type = Point;
+    };
+    id = 914650986743861248;
+    "id_str" = 914650986743861248;
+    "in_reply_to_screen_name" = "<null>";
+    "in_reply_to_status_id" = "<null>";
+    "in_reply_to_status_id_str" = "<null>";
+    "in_reply_to_user_id" = "<null>";
+    "in_reply_to_user_id_str" = "<null>";
+    "is_quote_status" = 0;
+    lang = ja;
+    place =     {
+        attributes =         {
+        };
+        "bounding_box" =         {
+            coordinates =             (
+                                (
+                                        (
+                        "139.326381",
+                        "36.600962"
+                    ),
+                                        (
+                        "139.853647",
+                        "36.600962"
+                    ),
+                                        (
+                        "139.853647",
+                        "37.09182"
+                    ),
+                                        (
+                        "139.326381",
+                        "37.09182"
+                    )
+                )
+            );
+            type = Polygon;
+        };
+        "contained_within" =         (
+        );
+        country = Japan;
+        "country_code" = JP;
+        "full_name" = "Nikko-shi, Tochigi";
+        id = 33cd06ef43d91645;
+        name = "Nikko-shi";
+        "place_type" = city;
+        url = "https://api.twitter.com/1.1/geo/id/33cd06ef43d91645.json";
+    };
+    "possibly_sensitive" = 0;
+    "possibly_sensitive_appealable" = 0;
+    "retweet_count" = 0;
+    retweeted = 0;
+    source = "<a href=\"http://www.twitter.com/\" rel=\"nofollow\">earthquake_allhypo</a>";
+    text = "\U3010\U6975\U5fae\U5c0f\U5730\U9707\U901f\U5831 \U6803\U6728\U770c4/193\U3011\n2017/10/02 9:04:08 JST, \n\U65e5\U672c \U6803\U6728\U770c \U5869\U8c37\U753a\U5f79\U5834\U306e\U5317\U897f11km, \nM0.9, TNT337.6g, \U6df1\U30553.8km, \nMAP https://t.co/ngTkCqCfvf 1468";
+    truncated = 0;
+    user =     {
+        "contributors_enabled" = 0;
+        "created_at" = "Tue Oct 04 14:18:08 +0000 2011";
+        "default_profile" = 0;
+        "default_profile_image" = 0;
+        description = "\U56fd\U5185\U306e\U7121\U611f\U5730\U9707\U3092\U542b\U3080\U901f\U5831\U3067\U3059\U3002\U7d50\U69cb\U5927\U304d\U3081\U306e\U5730\U9707\U306f\U3001\U30cd\U30b3\U304c\U65d7\U3082\U3063\U3066\U7652\U3057\U3092\U63d0\U4f9b\U3057\U307e\U3059\U3002\U203b\U9632\U707d\U6280\U7814\U3084\U6d77\U5916\U516c\U7684\U6a5f\U95a2\U60c5\U5831\U3092\U30cd\U30b3\U5909\U63db\U3057\U3066\U3044\U307e\U3059\U3002\U9707\U6e90\U5730\U306f\U3001\U6700\U5bc4\U308a\U306e\U5e02\U533a\U753a\U6751\U306e\U5f79\U6240\U3067\U8868\U793a\U3002\U9707\U5ea6\U306b\U3064\U3044\U3066\U306f\U3001@earthquake_all5\U3067\U65d7\U3082\U3063\U3066\U3055\U3089\U306a\U308b\U7652\U3057\U3092\U63d0\U4f9b\U3057\U307e\U3059(=\Uff9f\U03c9\Uff9f)\Uff89";
+        entities =         {
+            description =             {
+                urls =                 (
+                );
+            };
+            url =             {
+                urls =                 (
+                                        {
+                        "display_url" = "twitter.com/earthquake_all\U2026";
+                        "expanded_url" = "https://twitter.com/earthquake_all5/";
+                        indices =                         (
+                            0,
+                            23
+                        );
+                        url = "https://t.co/5f4bWrUrvP";
+                    }
+                );
+            };
+        };
+        "favourites_count" = 6;
+        "follow_request_sent" = 0;
+        "followers_count" = 11858;
+        following = 1;
+        "friends_count" = 5;
+        "geo_enabled" = 1;
+        "has_extended_profile" = 1;
+        id = 384889871;
+        "id_str" = 384889871;
+        "is_translation_enabled" = 0;
+        "is_translator" = 0;
+        lang = ja;
+        "listed_count" = 921;
+        location = WorldWide;
+        name = "\U5168\U5730\U9707\U901f\U5831\Ud83d\Udc3e";
+        notifications = 0;
+        "profile_background_color" = 000000;
+        "profile_background_image_url" = "http://pbs.twimg.com/profile_background_images/733147364/abf36690b589861cb1c21c1466dd0c3d.jpeg";
+        "profile_background_image_url_https" = "https://pbs.twimg.com/profile_background_images/733147364/abf36690b589861cb1c21c1466dd0c3d.jpeg";
+        "profile_background_tile" = 0;
+        "profile_banner_url" = "https://pbs.twimg.com/profile_banners/384889871/1496296995";
+        "profile_image_url" = "http://pbs.twimg.com/profile_images/799169974187134976/seXIyh4M_normal.jpg";
+        "profile_image_url_https" = "https://pbs.twimg.com/profile_images/799169974187134976/seXIyh4M_normal.jpg";
+        "profile_link_color" = 3B94D9;
+        "profile_sidebar_border_color" = 000000;
+        "profile_sidebar_fill_color" = DDEEF6;
+        "profile_text_color" = 333333;
+        "profile_use_background_image" = 0;
+        protected = 0;
+        "screen_name" = "earthquake_all";
+        "statuses_count" = 799606;
+        "time_zone" = Tokyo;
+        "translator_type" = none;
+        url = "https://t.co/5f4bWrUrvP";
+        "utc_offset" = 32400;
+        verified = 0;
+    };
+}, {
+    contributors = "<null>";
+    coordinates = "<null>";
+    "created_at" = "Mon Oct 02 00:38:03 +0000 2017";
+    entities =     {
+        hashtags =         (
+        );
+        symbols =         (
+        );
+        urls =         (
+                        {
+                "display_url" = "twitter.com/i/web/status/9\U2026";
+                "expanded_url" = "https://twitter.com/i/web/status/914650653380812801";
+                indices =                 (
+                    99,
+                    122
+                );
+                url = "https://t.co/N1DrlrU8Oj";
+            }
+        );
+        "user_mentions" =         (
+        );
+    };
+    "favorite_count" = 21;
+    favorited = 0;
+    geo = "<null>";
+    id = 914650653380812801;
+    "id_str" = 914650653380812801;
+    "in_reply_to_screen_name" = "<null>";
+    "in_reply_to_status_id" = "<null>";
+    "in_reply_to_status_id_str" = "<null>";
+    "in_reply_to_user_id" = "<null>";
+    "in_reply_to_user_id_str" = "<null>";
+    "is_quote_status" = 0;
+    lang = en;
+    place = "<null>";
+    "possibly_sensitive" = 0;
+    "possibly_sensitive_appealable" = 0;
+    "retweet_count" = 11;
+    retweeted = 0;
+    source = "<a href=\"http://www.socialflow.com\" rel=\"nofollow\">SocialFlow</a>";
+    text = "Pres. Trump dedicates golf tournament trophy to hurricane victims amid controversy over response.\U2026 https://t.co/N1DrlrU8Oj";
+    truncated = 1;
+    user =     {
+        "contributors_enabled" = 0;
+        "created_at" = "Sat Apr 04 12:40:32 +0000 2009";
+        "default_profile" = 0;
+        "default_profile_image" = 0;
+        description = "See the whole picture with @ABC News. Facebook: https://t.co/ewMNZ54axm Instagram: https://t.co/pPlGmNHztz";
+        entities =         {
+            description =             {
+                urls =                 (
+                                        {
+                        "display_url" = "facebook.com/abcnews";
+                        "expanded_url" = "https://www.facebook.com/abcnews";
+                        indices =                         (
+                            48,
+                            71
+                        );
+                        url = "https://t.co/ewMNZ54axm";
+                    },
+                                        {
+                        "display_url" = "instagram.com/abcnews";
+                        "expanded_url" = "https://www.instagram.com/abcnews";
+                        indices =                         (
+                            83,
+                            106
+                        );
+                        url = "https://t.co/pPlGmNHztz";
+                    }
+                );
+            };
+            url =             {
+                urls =                 (
+                                        {
+                        "display_url" = "ABCNews.com";
+                        "expanded_url" = "http://ABCNews.com";
+                        indices =                         (
+                            0,
+                            23
+                        );
+                        url = "https://t.co/v7GWW7ho1l";
+                    }
+                );
+            };
+        };
+        "favourites_count" = 459;
+        "follow_request_sent" = 0;
+        "followers_count" = 12185685;
+        following = 1;
+        "friends_count" = 738;
+        "geo_enabled" = 1;
+        "has_extended_profile" = 0;
+        id = 28785486;
+        "id_str" = 28785486;
+        "is_translation_enabled" = 1;
+        "is_translator" = 0;
+        lang = en;
+        "listed_count" = 50575;
+        location = "New York City / Worldwide";
+        name = "ABC News";
+        notifications = 0;
+        "profile_background_color" = 6E8EB5;
+        "profile_background_image_url" = "http://pbs.twimg.com/profile_background_images/441965491024719872/pAv-lzCZ.jpeg";
+        "profile_background_image_url_https" = "https://pbs.twimg.com/profile_background_images/441965491024719872/pAv-lzCZ.jpeg";
+        "profile_background_tile" = 0;
+        "profile_banner_url" = "https://pbs.twimg.com/profile_banners/28785486/1505493568";
+        "profile_image_url" = "http://pbs.twimg.com/profile_images/877547979363758080/ny06RNTT_normal.jpg";
+        "profile_image_url_https" = "https://pbs.twimg.com/profile_images/877547979363758080/ny06RNTT_normal.jpg";
+        "profile_link_color" = 336699;
+        "profile_sidebar_border_color" = FFFFFF;
+        "profile_sidebar_fill_color" = DDEEF6;
+        "profile_text_color" = 333333;
+        "profile_use_background_image" = 1;
+        protected = 0;
+        "screen_name" = ABC;
+        "statuses_count" = 182459;
+        "time_zone" = "Eastern Time (US & Canada)";
+        "translator_type" = regular;
+        url = "https://t.co/v7GWW7ho1l";
+        "utc_offset" = "-14400";
+        verified = 1;
+    };
+}, {
+    contributors = "<null>";
+    coordinates =     {
+        coordinates =         (
+            "141.5551",
+            "37.3265"
+        );
+        type = Point;
+    };
+    "created_at" = "Mon Oct 02 00:36:23 +0000 2017";
+    entities =     {
+        hashtags =         (
+        );
+        symbols =         (
+        );
+        urls =         (
+                        {
+                "display_url" = "maps.google.co.jp/maps?f=q&hl=ja\U2026";
+                "expanded_url" = "http://maps.google.co.jp/maps?f=q&hl=ja&geocode=&q=37.3265,141.5551&ie=UTF8&ll=37.3265,141.5551&z=6";
+                indices =                 (
+                    98,
+                    121
+                );
+                url = "https://t.co/nuqEKkKe2K";
+            }
+        );
+        "user_mentions" =         (
+        );
+    };
+    "favorite_count" = 0;
+    favorited = 0;
+    geo =     {
+        coordinates =         (
+            "37.3265",
+            "141.5551"
+        );
+        type = Point;
+    };
+    id = 914650231609815046;
+    "id_str" = 914650231609815046;
+    "in_reply_to_screen_name" = "<null>";
+    "in_reply_to_status_id" = "<null>";
+    "in_reply_to_status_id_str" = "<null>";
+    "in_reply_to_user_id" = "<null>";
+    "in_reply_to_user_id_str" = "<null>";
+    "is_quote_status" = 0;
+    lang = ja;
+    place = "<null>";
+    "possibly_sensitive" = 0;
+    "possibly_sensitive_appealable" = 0;
+    "retweet_count" = 0;
+    retweeted = 0;
+    source = "<a href=\"http://www.twitter.com/\" rel=\"nofollow\">earthquake_allhypo</a>";
+    text = "\U3010\U5fae\U5c0f\U5730\U9707\U901f\U5831 \U798f\U5cf6\U770c74/192\U3011\n2017/10/02 8:58:47 JST, \n\U65e5\U672c \U798f\U5cf6\U770c \U5bcc\U5ca1\U753a\U5f79\U5834\U306e\U6771\U5357\U677122km, \nM1.7, TNT5.4kg, \U6df1\U305542.4km, \nMAP https://t.co/nuqEKkKe2K 1466";
+    truncated = 0;
+    user =     {
+        "contributors_enabled" = 0;
+        "created_at" = "Tue Oct 04 14:18:08 +0000 2011";
+        "default_profile" = 0;
+        "default_profile_image" = 0;
+        description = "\U56fd\U5185\U306e\U7121\U611f\U5730\U9707\U3092\U542b\U3080\U901f\U5831\U3067\U3059\U3002\U7d50\U69cb\U5927\U304d\U3081\U306e\U5730\U9707\U306f\U3001\U30cd\U30b3\U304c\U65d7\U3082\U3063\U3066\U7652\U3057\U3092\U63d0\U4f9b\U3057\U307e\U3059\U3002\U203b\U9632\U707d\U6280\U7814\U3084\U6d77\U5916\U516c\U7684\U6a5f\U95a2\U60c5\U5831\U3092\U30cd\U30b3\U5909\U63db\U3057\U3066\U3044\U307e\U3059\U3002\U9707\U6e90\U5730\U306f\U3001\U6700\U5bc4\U308a\U306e\U5e02\U533a\U753a\U6751\U306e\U5f79\U6240\U3067\U8868\U793a\U3002\U9707\U5ea6\U306b\U3064\U3044\U3066\U306f\U3001@earthquake_all5\U3067\U65d7\U3082\U3063\U3066\U3055\U3089\U306a\U308b\U7652\U3057\U3092\U63d0\U4f9b\U3057\U307e\U3059(=\Uff9f\U03c9\Uff9f)\Uff89";
+        entities =         {
+            description =             {
+                urls =                 (
+                );
+            };
+            url =             {
+                urls =                 (
+                                        {
+                        "display_url" = "twitter.com/earthquake_all\U2026";
+                        "expanded_url" = "https://twitter.com/earthquake_all5/";
+                        indices =                         (
+                            0,
+                            23
+                        );
+                        url = "https://t.co/5f4bWrUrvP";
+                    }
+                );
+            };
+        };
+        "favourites_count" = 6;
+        "follow_request_sent" = 0;
+        "followers_count" = 11858;
+        following = 1;
+        "friends_count" = 5;
+        "geo_enabled" = 1;
+        "has_extended_profile" = 1;
+        id = 384889871;
+        "id_str" = 384889871;
+        "is_translation_enabled" = 0;
+        "is_translator" = 0;
+        lang = ja;
+        "listed_count" = 921;
+        location = WorldWide;
+        name = "\U5168\U5730\U9707\U901f\U5831\Ud83d\Udc3e";
+        notifications = 0;
+        "profile_background_color" = 000000;
+        "profile_background_image_url" = "http://pbs.twimg.com/profile_background_images/733147364/abf36690b589861cb1c21c1466dd0c3d.jpeg";
+        "profile_background_image_url_https" = "https://pbs.twimg.com/profile_background_images/733147364/abf36690b589861cb1c21c1466dd0c3d.jpeg";
+        "profile_background_tile" = 0;
+        "profile_banner_url" = "https://pbs.twimg.com/profile_banners/384889871/1496296995";
+        "profile_image_url" = "http://pbs.twimg.com/profile_images/799169974187134976/seXIyh4M_normal.jpg";
+        "profile_image_url_https" = "https://pbs.twimg.com/profile_images/799169974187134976/seXIyh4M_normal.jpg";
+        "profile_link_color" = 3B94D9;
+        "profile_sidebar_border_color" = 000000;
+        "profile_sidebar_fill_color" = DDEEF6;
+        "profile_text_color" = 333333;
+        "profile_use_background_image" = 0;
+        protected = 0;
+        "screen_name" = "earthquake_all";
+        "statuses_count" = 799606;
+        "time_zone" = Tokyo;
+        "translator_type" = none;
+        url = "https://t.co/5f4bWrUrvP";
+        "utc_offset" = 32400;
+        verified = 0;
+    };
+}, {
+    contributors = "<null>";
+    coordinates = "<null>";
+    "created_at" = "Mon Oct 02 00:36:02 +0000 2017";
+    entities =     {
+        hashtags =         (
+        );
+        symbols =         (
+        );
+        urls =         (
+                        {
+                "display_url" = "youtube.com/watch?v=jVhlJN\U2026";
+                "expanded_url" = "https://www.youtube.com/watch?v=jVhlJNJopOQ&feature=youtu.be";
+                indices =                 (
+                    9,
+                    32
+                );
+                url = "https://t.co/4A0xy3oAZQ";
+            }
+        );
+        "user_mentions" =         (
+        );
+    };
+    "favorite_count" = 0;
+    favorited = 0;
+    geo = "<null>";
+    id = 914650143248441345;
+    "id_str" = 914650143248441345;
+    "in_reply_to_screen_name" = "<null>";
+    "in_reply_to_status_id" = "<null>";
+    "in_reply_to_status_id_str" = "<null>";
+    "in_reply_to_user_id" = "<null>";
+    "in_reply_to_user_id_str" = "<null>";
+    "is_quote_status" = 0;
+    lang = lt;
+    place = "<null>";
+    "possibly_sensitive" = 0;
+    "possibly_sensitive_appealable" = 0;
+    "retweet_count" = 0;
+    retweeted = 0;
+    source = "<a href=\"https://about.twitter.com/products/tweetdeck\" rel=\"nofollow\">TweetDeck</a>";
+    text = "Papyrus. https://t.co/4A0xy3oAZQ";
+    truncated = 0;
+    user =     {
+        "contributors_enabled" = 0;
+        "created_at" = "Wed Apr 09 08:46:09 +0000 2008";
+        "default_profile" = 0;
+        "default_profile_image" = 0;
+        description = "Occasional General Assembly UX Instructor. Sometimes UX Director. Always whiskey drinker. Runs https://t.co/NSfPstK2nU. Opinions are my own.";
+        entities =         {
+            description =             {
+                urls =                 (
+                                        {
+                        "display_url" = "usabilitycounts.com";
+                        "expanded_url" = "http://www.usabilitycounts.com";
+                        indices =                         (
+                            95,
+                            118
+                        );
+                        url = "https://t.co/NSfPstK2nU";
+                    }
+                );
+            };
+            url =             {
+                urls =                 (
+                                        {
+                        "display_url" = "usabilitycounts.com";
+                        "expanded_url" = "http://www.usabilitycounts.com";
+                        indices =                         (
+                            0,
+                            23
+                        );
+                        url = "https://t.co/NSfPstK2nU";
+                    }
+                );
+            };
+        };
+        "favourites_count" = 7119;
+        "follow_request_sent" = 0;
+        "followers_count" = 108595;
+        following = 1;
+        "friends_count" = 362;
+        "geo_enabled" = 1;
+        "has_extended_profile" = 1;
+        id = 14340145;
+        "id_str" = 14340145;
+        "is_translation_enabled" = 0;
+        "is_translator" = 0;
+        lang = en;
+        "listed_count" = 3356;
+        location = "Seattle, WA";
+        name = "Patrick Neeman";
+        notifications = 0;
+        "profile_background_color" = 000000;
+        "profile_background_image_url" = "http://abs.twimg.com/images/themes/theme14/bg.gif";
+        "profile_background_image_url_https" = "https://abs.twimg.com/images/themes/theme14/bg.gif";
+        "profile_background_tile" = 0;
+        "profile_banner_url" = "https://pbs.twimg.com/profile_banners/14340145/1405098178";
+        "profile_image_url" = "http://pbs.twimg.com/profile_images/760320782241181696/ovdisD-2_normal.jpg";
+        "profile_image_url_https" = "https://pbs.twimg.com/profile_images/760320782241181696/ovdisD-2_normal.jpg";
+        "profile_link_color" = 4A913C;
+        "profile_sidebar_border_color" = 000000;
+        "profile_sidebar_fill_color" = 000000;
+        "profile_text_color" = 000000;
+        "profile_use_background_image" = 0;
+        protected = 0;
+        "screen_name" = usabilitycounts;
+        "statuses_count" = 43676;
+        "time_zone" = "Pacific Time (US & Canada)";
+        "translator_type" = none;
+        url = "https://t.co/NSfPstK2nU";
+        "utc_offset" = "-25200";
+        verified = 0;
+    };
+}, {
+    contributors = "<null>";
+    coordinates = "<null>";
+    "created_at" = "Mon Oct 02 00:35:20 +0000 2017";
+    entities =     {
+        hashtags =         (
+        );
+        symbols =         (
+        );
+        urls =         (
+        );
+        "user_mentions" =         (
+                        {
+                id = 430145070;
+                "id_str" = 430145070;
+                indices =                 (
+                    3,
+                    16
+                );
+                name = SportsCentre;
+                "screen_name" = SportsCentre;
+            },
+                        {
+                id = 798709508193316864;
+                "id_str" = 798709508193316864;
+                indices =                 (
+                    69,
+                    82
+                );
+                name = "NZ Women's Open LPGA";
+                "screen_name" = NZWomensOpen;
+            }
+        );
+    };
+    "favorite_count" = 0;
+    favorited = 0;
+    geo = "<null>";
+    id = 914649969394688001;
+    "id_str" = 914649969394688001;
+    "in_reply_to_screen_name" = "<null>";
+    "in_reply_to_status_id" = "<null>";
+    "in_reply_to_status_id_str" = "<null>";
+    "in_reply_to_user_id" = "<null>";
+    "in_reply_to_user_id_str" = "<null>";
+    "is_quote_status" = 0;
+    lang = en;
+    place = "<null>";
+    "retweet_count" = 56;
+    retweeted = 0;
+    "retweeted_status" =     {
+        contributors = "<null>";
+        coordinates = "<null>";
+        "created_at" = "Sun Oct 01 23:28:54 +0000 2017";
+        entities =         {
+            hashtags =             (
+            );
+            symbols =             (
+            );
+            urls =             (
+                                {
+                    "display_url" = "twitter.com/i/web/status/9\U2026";
+                    "expanded_url" = "https://twitter.com/i/web/status/914633250106044416";
+                    indices =                     (
+                        116,
+                        139
+                    );
+                    url = "https://t.co/OaVzEwxTVE";
+                }
+            );
+            "user_mentions" =             (
+                                {
+                    id = 798709508193316864;
+                    "id_str" = 798709508193316864;
+                    indices =                     (
+                        51,
+                        64
+                    );
+                    name = "NZ Women's Open LPGA";
+                    "screen_name" = NZWomensOpen;
+                }
+            );
+        };
+        "favorite_count" = 174;
+        favorited = 0;
+        geo = "<null>";
+        id = 914633250106044416;
+        "id_str" = 914633250106044416;
+        "in_reply_to_screen_name" = "<null>";
+        "in_reply_to_status_id" = "<null>";
+        "in_reply_to_status_id_str" = "<null>";
+        "in_reply_to_user_id" = "<null>";
+        "in_reply_to_user_id_str" = "<null>";
+        "is_quote_status" = 0;
+        lang = en;
+        place = "<null>";
+        "possibly_sensitive" = 0;
+        "possibly_sensitive_appealable" = 0;
+        "retweet_count" = 56;
+        retweeted = 0;
+        source = "<a href=\"http://twitter.com\" rel=\"nofollow\">Twitter Web Client</a>";
+        text = "OVERSEAS MAGIC: Canadian Brooke Henderson wins the @NZWomensOpen at Windross Farm with a final score of -17. MORE:\U2026 https://t.co/OaVzEwxTVE";
+        truncated = 1;
+        user =         {
+            "contributors_enabled" = 0;
+            "created_at" = "Tue Dec 06 20:29:05 +0000 2011";
+            "default_profile" = 0;
+            "default_profile_image" = 0;
+            description = "Official TSN Twitter account for Canada's most comprehensive sports news program featuring highlights, scores and exclusive features.";
+            entities =             {
+                description =                 {
+                    urls =                     (
+                    );
+                };
+                url =                 {
+                    urls =                     (
+                                                {
+                            "display_url" = "tsn.ca";
+                            "expanded_url" = "http://www.tsn.ca";
+                            indices =                             (
+                                0,
+                                23
+                            );
+                            url = "https://t.co/6AoRWvbM6w";
+                        }
+                    );
+                };
+            };
+            "favourites_count" = 76;
+            "follow_request_sent" = 0;
+            "followers_count" = 185897;
+            following = 0;
+            "friends_count" = 242;
+            "geo_enabled" = 1;
+            "has_extended_profile" = 0;
+            id = 430145070;
+            "id_str" = 430145070;
+            "is_translation_enabled" = 0;
+            "is_translator" = 0;
+            lang = en;
+            "listed_count" = 902;
+            location = "";
+            name = SportsCentre;
+            notifications = 0;
+            "profile_background_color" = C0DEED;
+            "profile_background_image_url" = "http://pbs.twimg.com/profile_background_images/645085920/t7t0ef7dm7oxmiall92t.jpeg";
+            "profile_background_image_url_https" = "https://pbs.twimg.com/profile_background_images/645085920/t7t0ef7dm7oxmiall92t.jpeg";
+            "profile_background_tile" = 0;
+            "profile_banner_url" = "https://pbs.twimg.com/profile_banners/430145070/1502286892";
+            "profile_image_url" = "http://pbs.twimg.com/profile_images/885959902182637568/t_-4jVZk_normal.jpg";
+            "profile_image_url_https" = "https://pbs.twimg.com/profile_images/885959902182637568/t_-4jVZk_normal.jpg";
+            "profile_link_color" = 0084B4;
+            "profile_sidebar_border_color" = C0DEED;
+            "profile_sidebar_fill_color" = DDEEF6;
+            "profile_text_color" = 333333;
+            "profile_use_background_image" = 1;
+            protected = 0;
+            "screen_name" = SportsCentre;
+            "statuses_count" = 17804;
+            "time_zone" = "Central Time (US & Canada)";
+            "translator_type" = none;
+            url = "https://t.co/6AoRWvbM6w";
+            "utc_offset" = "-18000";
+            verified = 1;
+        };
+    };
+    source = "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>";
+    text = "RT @SportsCentre: OVERSEAS MAGIC: Canadian Brooke Henderson wins the @NZWomensOpen at Windross Farm with a final score of -17. MORE: https:\U2026";
+    truncated = 0;
+    user =     {
+        "contributors_enabled" = 0;
+        "created_at" = "Sat Apr 28 12:34:54 +0000 2007";
+        "default_profile" = 0;
+        "default_profile_image" = 0;
+        description = "Vice-President and Senior Consultant @KinaoleCanada Team member that built @WorldIADay Instagram https://t.co/RvQ4aFfpPI";
+        entities =         {
+            description =             {
+                urls =                 (
+                                        {
+                        "display_url" = "Instagram.com/jefferyparks";
+                        "expanded_url" = "https://Instagram.com/jefferyparks";
+                        indices =                         (
+                            97,
+                            120
+                        );
+                        url = "https://t.co/RvQ4aFfpPI";
+                    }
+                );
+            };
+            url =             {
+                urls =                 (
+                                        {
+                        "display_url" = "kinaole.ca";
+                        "expanded_url" = "http://www.kinaole.ca";
+                        indices =                         (
+                            0,
+                            23
+                        );
+                        url = "https://t.co/8e0u4sg03r";
+                    }
+                );
+            };
+        };
+        "favourites_count" = 3779;
+        "follow_request_sent" = 0;
+        "followers_count" = 4430;
+        following = 1;
+        "friends_count" = 510;
+        "geo_enabled" = 1;
+        "has_extended_profile" = 0;
+        id = 5591082;
+        "id_str" = 5591082;
+        "is_translation_enabled" = 0;
+        "is_translator" = 0;
+        lang = en;
+        "listed_count" = 500;
+        location = "";
+        name = "Jeff Parks";
+        notifications = 1;
+        "profile_background_color" = FFFFFF;
+        "profile_background_image_url" = "http://pbs.twimg.com/profile_background_images/459317152214839296/70OT0tk-.jpeg";
+        "profile_background_image_url_https" = "https://pbs.twimg.com/profile_background_images/459317152214839296/70OT0tk-.jpeg";
+        "profile_background_tile" = 0;
+        "profile_banner_url" = "https://pbs.twimg.com/profile_banners/5591082/1505499681";
+        "profile_image_url" = "http://pbs.twimg.com/profile_images/907274200943132674/DP6L5ec4_normal.jpg";
+        "profile_image_url_https" = "https://pbs.twimg.com/profile_images/907274200943132674/DP6L5ec4_normal.jpg";
+        "profile_link_color" = 990000;
+        "profile_sidebar_border_color" = FFFFFF;
+        "profile_sidebar_fill_color" = F3F3F3;
+        "profile_text_color" = 333333;
+        "profile_use_background_image" = 0;
+        protected = 0;
+        "screen_name" = jeffparks;
+        "statuses_count" = 26174;
+        "time_zone" = "Eastern Time (US & Canada)";
+        "translator_type" = none;
+        url = "https://t.co/8e0u4sg03r";
+        "utc_offset" = "-14400";
+        verified = 0;
+    };
+}, {
+    contributors = "<null>";
+    coordinates = "<null>";
+    "created_at" = "Mon Oct 02 00:35:02 +0000 2017";
+    entities =     {
+        hashtags =         (
+        );
+        symbols =         (
+        );
+        urls =         (
+                        {
+                "display_url" = "on.wsj.com/2xIklCP";
+                "expanded_url" = "http://on.wsj.com/2xIklCP";
+                indices =                 (
+                    83,
+                    106
+                );
+                url = "https://t.co/I17JeFhGJn";
+            }
+        );
+        "user_mentions" =         (
+        );
+    };
+    "favorite_count" = 60;
+    favorited = 0;
+    geo = "<null>";
+    id = 914649894949916672;
+    "id_str" = 914649894949916672;
+    "in_reply_to_screen_name" = "<null>";
+    "in_reply_to_status_id" = "<null>";
+    "in_reply_to_status_id_str" = "<null>";
+    "in_reply_to_user_id" = "<null>";
+    "in_reply_to_user_id_str" = "<null>";
+    "is_quote_status" = 0;
+    lang = en;
+    place = "<null>";
+    "possibly_sensitive" = 0;
+    "possibly_sensitive_appealable" = 0;
+    "retweet_count" = 32;
+    retweeted = 0;
+    source = "<a href=\"http://www.socialflow.com\" rel=\"nofollow\">SocialFlow</a>";
+    text = "Canada\U2019s left-leaning New Democratic Party elected Jagmeet Singh as its new leader https://t.co/I17JeFhGJn";
+    truncated = 0;
+    user =     {
+        "contributors_enabled" = 0;
+        "created_at" = "Sun Apr 01 06:22:13 +0000 2007";
+        "default_profile" = 0;
+        "default_profile_image" = 0;
+        description = "Breaking news and features from the WSJ.";
+        entities =         {
+            description =             {
+                urls =                 (
+                );
+            };
+            url =             {
+                urls =                 (
+                                        {
+                        "display_url" = "wsj.com";
+                        "expanded_url" = "http://wsj.com";
+                        indices =                         (
+                            0,
+                            23
+                        );
+                        url = "https://t.co/GhhR6PLfem";
+                    }
+                );
+            };
+        };
+        "favourites_count" = 1293;
+        "follow_request_sent" = 0;
+        "followers_count" = 14885451;
+        following = 1;
+        "friends_count" = 1086;
+        "geo_enabled" = 1;
+        "has_extended_profile" = 0;
+        id = 3108351;
+        "id_str" = 3108351;
+        "is_translation_enabled" = 1;
+        "is_translator" = 0;
+        lang = en;
+        "listed_count" = 106958;
+        location = "New York, NY";
+        name = "Wall Street Journal";
+        notifications = 0;
+        "profile_background_color" = EDF2F5;
+        "profile_background_image_url" = "http://pbs.twimg.com/profile_background_images/378800000026078008/c07ad7d60f01c3a836dd701fc3f71233.jpeg";
+        "profile_background_image_url_https" = "https://pbs.twimg.com/profile_background_images/378800000026078008/c07ad7d60f01c3a836dd701fc3f71233.jpeg";
+        "profile_background_tile" = 0;
+        "profile_banner_url" = "https://pbs.twimg.com/profile_banners/3108351/1462483236";
+        "profile_image_url" = "http://pbs.twimg.com/profile_images/685113343204585473/jV72Zljq_normal.jpg";
+        "profile_image_url_https" = "https://pbs.twimg.com/profile_images/685113343204585473/jV72Zljq_normal.jpg";
+        "profile_link_color" = 1164B8;
+        "profile_sidebar_border_color" = FFFFFF;
+        "profile_sidebar_fill_color" = EFEFEF;
+        "profile_text_color" = 333333;
+        "profile_use_background_image" = 0;
+        protected = 0;
+        "screen_name" = WSJ;
+        "statuses_count" = 215838;
+        "time_zone" = "Eastern Time (US & Canada)";
+        "translator_type" = regular;
+        url = "https://t.co/GhhR6PLfem";
+        "utc_offset" = "-14400";
+        verified = 1;
+    };
+}, {
+    contributors = "<null>";
+    coordinates = "<null>";
+    "created_at" = "Mon Oct 02 00:35:00 +0000 2017";
+    entities =     {
+        hashtags =         (
+                        {
+                indices =                 (
+                    0,
+                    7
+                );
+                text = Moscow;
+            },
+                        {
+                indices =                 (
+                    32,
+                    35
+                );
+                text = US;
+            }
+        );
+        symbols =         (
+        );
+        urls =         (
+                        {
+                "display_url" = "news.cgtn.com/news/7a41544f7\U2026";
+                "expanded_url" = "https://news.cgtn.com/news/7a41544f78597a6333566d54/share_p.html";
+                indices =                 (
+                    72,
+                    95
+                );
+                url = "https://t.co/0gmQONLYFG";
+            }
+        );
+        "user_mentions" =         (
+        );
+    };
+    "favorite_count" = 9;
+    favorited = 0;
+    geo = "<null>";
+    id = 914649885772726272;
+    "id_str" = 914649885772726272;
+    "in_reply_to_screen_name" = "<null>";
+    "in_reply_to_status_id" = "<null>";
+    "in_reply_to_status_id_str" = "<null>";
+    "in_reply_to_user_id" = "<null>";
+    "in_reply_to_user_id_str" = "<null>";
+    "is_quote_status" = 0;
+    lang = en;
+    place = "<null>";
+    "possibly_sensitive" = 0;
+    "possibly_sensitive_appealable" = 0;
+    "retweet_count" = 13;
+    retweeted = 0;
+    source = "<a href=\"https://about.twitter.com/products/tweetdeck\" rel=\"nofollow\">TweetDeck</a>";
+    text = "#Moscow warns of retaliation if #US continues to pressure Russian media https://t.co/0gmQONLYFG";
+    truncated = 0;
+    user =     {
+        "contributors_enabled" = 0;
+        "created_at" = "Thu Jan 24 03:18:59 +0000 2013";
+        "default_profile" = 0;
+        "default_profile_image" = 0;
+        description = "China Global Television Network, or CGTN, is a multi-language, multi-platform media grouping.";
+        entities =         {
+            description =             {
+                urls =                 (
+                );
+            };
+            url =             {
+                urls =                 (
+                                        {
+                        "display_url" = "CGTN.com";
+                        "expanded_url" = "http://www.CGTN.com";
+                        indices =                         (
+                            0,
+                            23
+                        );
+                        url = "https://t.co/YSOcIymQSt";
+                    }
+                );
+            };
+        };
+        "favourites_count" = 14;
+        "follow_request_sent" = 0;
+        "followers_count" = 4304009;
+        following = 1;
+        "friends_count" = 51;
+        "geo_enabled" = 1;
+        "has_extended_profile" = 0;
+        id = 1115874631;
+        "id_str" = 1115874631;
+        "is_translation_enabled" = 0;
+        "is_translator" = 0;
+        lang = en;
+        "listed_count" = 4422;
+        location = "Beijing, China";
+        name = CGTN;
+        notifications = 0;
+        "profile_background_color" = 131516;
+        "profile_background_image_url" = "http://pbs.twimg.com/profile_background_images/378800000169084583/SqpyvnvQ.jpeg";
+        "profile_background_image_url_https" = "https://pbs.twimg.com/profile_background_images/378800000169084583/SqpyvnvQ.jpeg";
+        "profile_background_tile" = 1;
+        "profile_banner_url" = "https://pbs.twimg.com/profile_banners/1115874631/1483157766";
+        "profile_image_url" = "http://pbs.twimg.com/profile_images/815049165508112384/wJA8jWZh_normal.jpg";
+        "profile_image_url_https" = "https://pbs.twimg.com/profile_images/815049165508112384/wJA8jWZh_normal.jpg";
+        "profile_link_color" = 009999;
+        "profile_sidebar_border_color" = FFFFFF;
+        "profile_sidebar_fill_color" = EFEFEF;
+        "profile_text_color" = 333333;
+        "profile_use_background_image" = 1;
+        protected = 0;
+        "screen_name" = CGTNOfficial;
+        "statuses_count" = 36718;
+        "time_zone" = Beijing;
+        "translator_type" = none;
+        url = "https://t.co/YSOcIymQSt";
+        "utc_offset" = 28800;
+        verified = 1;
+    };
+}, {
+    contributors = "<null>";
+    coordinates = "<null>";
+    "created_at" = "Mon Oct 02 00:34:28 +0000 2017";
+    entities =     {
+        hashtags =         (
+        );
+        symbols =         (
+        );
+        urls =         (
+                        {
+                "display_url" = "nyti.ms/2fCHLyS";
+                "expanded_url" = "http://nyti.ms/2fCHLyS";
+                indices =                 (
+                    110,
+                    133
+                );
+                url = "https://t.co/gVkTbsX4w6";
+            }
+        );
+        "user_mentions" =         (
+        );
+    };
+    "favorite_count" = 67;
+    favorited = 0;
+    geo = "<null>";
+    id = 914649748648398848;
+    "id_str" = 914649748648398848;
+    "in_reply_to_screen_name" = "<null>";
+    "in_reply_to_status_id" = "<null>";
+    "in_reply_to_status_id_str" = "<null>";
+    "in_reply_to_user_id" = "<null>";
+    "in_reply_to_user_id_str" = "<null>";
+    "is_quote_status" = 0;
+    lang = en;
+    place = "<null>";
+    "possibly_sensitive" = 0;
+    "possibly_sensitive_appealable" = 0;
+    "retweet_count" = 45;
+    retweeted = 0;
+    source = "<a href=\"http://www.socialflow.com\" rel=\"nofollow\">SocialFlow</a>";
+    text = "As Mexico\U2019s rich effectively withdraw, the implicit arrangements that hold society together are breaking down https://t.co/gVkTbsX4w6";
+    truncated = 0;
+    user =     {
+        "contributors_enabled" = 0;
+        "created_at" = "Fri Mar 02 20:41:42 +0000 2007";
+        "default_profile" = 0;
+        "default_profile_image" = 0;
+        description = "Where the conversation begins. Follow for breaking news, special reports, RTs of our journalists and more from https://t.co/YapuoqX0HS.";
+        entities =         {
+            description =             {
+                urls =                 (
+                );
+            };
+            url =             {
+                urls =                 (
+                                        {
+                        "expanded_url" = "<null>";
+                        indices =                         (
+                            0,
+                            22
+                        );
+                        url = "http://t.co/ahvuWqicF9";
+                    }
+                );
+            };
+        };
+        "favourites_count" = 15551;
+        "follow_request_sent" = 0;
+        "followers_count" = 39641439;
+        following = 1;
+        "friends_count" = 887;
+        "geo_enabled" = 0;
+        "has_extended_profile" = 0;
+        id = 807095;
+        "id_str" = 807095;
+        "is_translation_enabled" = 1;
+        "is_translator" = 0;
+        lang = en;
+        "listed_count" = 191671;
+        location = "New York City";
+        name = "The New York Times";
+        notifications = 0;
+        "profile_background_color" = 131516;
+        "profile_background_image_url" = "http://pbs.twimg.com/profile_background_images/736339684/948f072cc2da4e3a5e9f2ebfb3b1a0e7.png";
+        "profile_background_image_url_https" = "https://pbs.twimg.com/profile_background_images/736339684/948f072cc2da4e3a5e9f2ebfb3b1a0e7.png";
+        "profile_background_tile" = 1;
+        "profile_banner_url" = "https://pbs.twimg.com/profile_banners/807095/1503971558";
+        "profile_image_url" = "http://pbs.twimg.com/profile_images/905479981459013637/a6BbKh4k_normal.jpg";
+        "profile_image_url_https" = "https://pbs.twimg.com/profile_images/905479981459013637/a6BbKh4k_normal.jpg";
+        "profile_link_color" = 607696;
+        "profile_sidebar_border_color" = FFFFFF;
+        "profile_sidebar_fill_color" = EFEFEF;
+        "profile_text_color" = 333333;
+        "profile_use_background_image" = 1;
+        protected = 0;
+        "screen_name" = nytimes;
+        "statuses_count" = 293956;
+        "time_zone" = "Eastern Time (US & Canada)";
+        "translator_type" = none;
+        url = "http://t.co/ahvuWqicF9";
+        "utc_offset" = "-14400";
+        verified = 1;
+    };
+}, {
+    contributors = "<null>";
+    coordinates = "<null>";
+    "created_at" = "Mon Oct 02 00:34:00 +0000 2017";
+    entities =     {
+        hashtags =         (
+        );
+        symbols =         (
+        );
+        urls =         (
+                        {
+                "display_url" = "twitter.com/i/web/status/9\U2026";
+                "expanded_url" = "https://twitter.com/i/web/status/914649631711219713";
+                indices =                 (
+                    114,
+                    137
+                );
+                url = "https://t.co/FfPovo0kXz";
+            }
+        );
+        "user_mentions" =         (
+        );
+    };
+    "favorite_count" = 252;
+    favorited = 0;
+    geo = "<null>";
+    id = 914649631711219713;
+    "id_str" = 914649631711219713;
+    "in_reply_to_screen_name" = "<null>";
+    "in_reply_to_status_id" = "<null>";
+    "in_reply_to_status_id_str" = "<null>";
+    "in_reply_to_user_id" = "<null>";
+    "in_reply_to_user_id_str" = "<null>";
+    "is_quote_status" = 0;
+    lang = en;
+    place = "<null>";
+    "possibly_sensitive" = 0;
+    "possibly_sensitive_appealable" = 0;
+    "retweet_count" = 101;
+    retweeted = 0;
+    source = "<a href=\"http://www.socialflow.com\" rel=\"nofollow\">SocialFlow</a>";
+    text = "Trump supporter in Puerto Rico: \"Our men go to war to help the US. Why can\U2019t he help us in this kind of matter?\U201d\U2026 https://t.co/FfPovo0kXz";
+    truncated = 1;
+    user =     {
+        "contributors_enabled" = 0;
+        "created_at" = "Fri Feb 09 00:35:02 +0000 2007";
+        "default_profile" = 0;
+        "default_profile_image" = 0;
+        description = "It\U2019s our job to #GoThere & tell the most difficult stories. Join us! For more breaking news updates follow @CNNBRK  & Download our app \Ud83d\Udcf2https://t.co/Xgo5kjIt8c";
+        entities =         {
+            description =             {
+                urls =                 (
+                                        {
+                        "display_url" = "cnn.it/apps";
+                        "expanded_url" = "http://cnn.it/apps";
+                        indices =                         (
+                            136,
+                            159
+                        );
+                        url = "https://t.co/Xgo5kjIt8c";
+                    }
+                );
+            };
+            url =             {
+                urls =                 (
+                                        {
+                        "display_url" = "cnn.com";
+                        "expanded_url" = "http://www.cnn.com";
+                        indices =                         (
+                            0,
+                            22
+                        );
+                        url = "http://t.co/IaghNW8Xm2";
+                    }
+                );
+            };
+        };
+        "favourites_count" = 1478;
+        "follow_request_sent" = 0;
+        "followers_count" = 37846632;
+        following = 1;
+        "friends_count" = 1118;
+        "geo_enabled" = 1;
+        "has_extended_profile" = 0;
+        id = 759251;
+        "id_str" = 759251;
+        "is_translation_enabled" = 1;
+        "is_translator" = 0;
+        lang = en;
+        "listed_count" = 128418;
+        location = "";
+        name = CNN;
+        notifications = 0;
+        "profile_background_color" = 323232;
+        "profile_background_image_url" = "http://pbs.twimg.com/profile_background_images/515228058286952449/zVfUxqPl.jpeg";
+        "profile_background_image_url_https" = "https://pbs.twimg.com/profile_background_images/515228058286952449/zVfUxqPl.jpeg";
+        "profile_background_tile" = 0;
+        "profile_banner_url" = "https://pbs.twimg.com/profile_banners/759251/1497965895";
+        "profile_image_url" = "http://pbs.twimg.com/profile_images/508960761826131968/LnvhR8ED_normal.png";
+        "profile_image_url_https" = "https://pbs.twimg.com/profile_images/508960761826131968/LnvhR8ED_normal.png";
+        "profile_link_color" = 004287;
+        "profile_sidebar_border_color" = 000000;
+        "profile_sidebar_fill_color" = EEEEEE;
+        "profile_text_color" = 000000;
+        "profile_use_background_image" = 0;
+        protected = 0;
+        "screen_name" = CNN;
+        "statuses_count" = 151336;
+        "time_zone" = "Eastern Time (US & Canada)";
+        "translator_type" = regular;
+        url = "http://t.co/IaghNW8Xm2";
+        "utc_offset" = "-14400";
+        verified = 1;
+    };
+}, {
+    contributors = "<null>";
+    coordinates = "<null>";
+    "created_at" = "Mon Oct 02 00:33:33 +0000 2017";
+    entities =     {
+        hashtags =         (
+        );
+        symbols =         (
+        );
+        urls =         (
+        );
+        "user_mentions" =         (
+        );
+    };
+    "favorite_count" = 0;
+    favorited = 0;
+    geo = "<null>";
+    id = 914649520071258113;
+    "id_str" = 914649520071258113;
+    "in_reply_to_screen_name" = "<null>";
+    "in_reply_to_status_id" = "<null>";
+    "in_reply_to_status_id_str" = "<null>";
+    "in_reply_to_user_id" = "<null>";
+    "in_reply_to_user_id_str" = "<null>";
+    "is_quote_status" = 0;
+    lang = en;
+    place = "<null>";
+    "retweet_count" = 0;
+    retweeted = 0;
+    source = "<a href=\"http://twitter.com\" rel=\"nofollow\">Twitter for  iPhone</a>";
+    text = "If you're not watching FAUDA on Netflix and you're a fan of spy/thrillers, get on it. (Skip the dubbing though. Deal with the subtitles.)";
+    truncated = 0;
+    user =     {
+        "contributors_enabled" = 0;
+        "created_at" = "Thu Jul 27 15:07:08 +0000 2006";
+        "default_profile" = 0;
+        "default_profile_image" = 0;
+        description = "Product design leader and author. There is no dog I won't try to pet: @danpetsdogs Works at @Twitter @Design. (No, I can't do anything about his tweets.)";
+        entities =         {
+            description =             {
+                urls =                 (
+                );
+            };
+            url =             {
+                urls =                 (
+                                        {
+                        "display_url" = "odannyboy.com";
+                        "expanded_url" = "http://www.odannyboy.com";
+                        indices =                         (
+                            0,
+                            23
+                        );
+                        url = "https://t.co/Z23Mr9JOwN";
+                    }
+                );
+            };
+        };
+        "favourites_count" = 12365;
+        "follow_request_sent" = 0;
+        "followers_count" = 25134;
+        following = 1;
+        "friends_count" = 352;
+        "geo_enabled" = 1;
+        "has_extended_profile" = 1;
+        id = 3252;
+        "id_str" = 3252;
+        "is_translation_enabled" = 0;
+        "is_translator" = 0;
+        lang = en;
+        "listed_count" = 1859;
+        location = "San Francisco";
+        name = "Dan Saffer \Ud83c\Uddfa\Ud83c\Uddf8";
+        notifications = 0;
+        "profile_background_color" = ACDED6;
+        "profile_background_image_url" = "http://abs.twimg.com/images/themes/theme18/bg.gif";
+        "profile_background_image_url_https" = "https://abs.twimg.com/images/themes/theme18/bg.gif";
+        "profile_background_tile" = 0;
+        "profile_banner_url" = "https://pbs.twimg.com/profile_banners/3252/1398224743";
+        "profile_image_url" = "http://pbs.twimg.com/profile_images/823356755170107393/wbudBAtM_normal.jpg";
+        "profile_image_url_https" = "https://pbs.twimg.com/profile_images/823356755170107393/wbudBAtM_normal.jpg";
+        "profile_link_color" = FA743E;
+        "profile_sidebar_border_color" = FFFFFF;
+        "profile_sidebar_fill_color" = F6F6F6;
+        "profile_text_color" = 333333;
+        "profile_use_background_image" = 1;
+        protected = 0;
+        "screen_name" = odannyboy;
+        "statuses_count" = 37842;
+        "time_zone" = "Pacific Time (US & Canada)";
+        "translator_type" = none;
+        url = "https://t.co/Z23Mr9JOwN";
+        "utc_offset" = "-25200";
+        verified = 1;
+    };
+}, {
+    contributors = "<null>";
+    coordinates = "<null>";
+    "created_at" = "Mon Oct 02 00:33:26 +0000 2017";
+    entities =     {
+        hashtags =         (
+        );
+        symbols =         (
+        );
+        urls =         (
+        );
+        "user_mentions" =         (
+        );
+    };
+    "favorite_count" = 12;
+    favorited = 0;
+    geo = "<null>";
+    id = 914649489285160960;
+    "id_str" = 914649489285160960;
+    "in_reply_to_screen_name" = "<null>";
+    "in_reply_to_status_id" = "<null>";
+    "in_reply_to_status_id_str" = "<null>";
+    "in_reply_to_user_id" = "<null>";
+    "in_reply_to_user_id_str" = "<null>";
+    "is_quote_status" = 0;
+    lang = en;
+    place = "<null>";
+    "retweet_count" = 1;
+    retweeted = 0;
+    source = "<a href=\"http://itunes.apple.com/us/app/twitter/id409789998?mt=12\" rel=\"nofollow\">Twitter for Mac</a>";
+    text = "The 10 Puerto Ricans who don\U2019t hate the shit out of Trump are gonna get a hell of a lot of TV time on Tuesday.";
+    truncated = 0;
+    user =     {
+        "contributors_enabled" = 0;
+        "created_at" = "Mon May 01 22:17:42 +0000 2006";
+        "default_profile" = 0;
+        "default_profile_image" = 0;
+        description = "Managing Editor, Internet.";
+        entities =         {
+            description =             {
+                urls =                 (
+                );
+            };
+            url =             {
+                urls =                 (
+                                        {
+                        "display_url" = "nextdraft.com";
+                        "expanded_url" = "http://www.nextdraft.com";
+                        indices =                         (
+                            0,
+                            22
+                        );
+                        url = "http://t.co/ff3Ukt1oyA";
+                    }
+                );
+            };
+        };
+        "favourites_count" = 8384;
+        "follow_request_sent" = 0;
+        "followers_count" = 48279;
+        following = 1;
+        "friends_count" = 698;
+        "geo_enabled" = 1;
+        "has_extended_profile" = 1;
+        id = 224;
+        "id_str" = 224;
+        "is_translation_enabled" = 0;
+        "is_translator" = 0;
+        lang = en;
+        "listed_count" = 1985;
+        location = "San Francisco";
+        name = "Dave Pell";
+        notifications = 0;
+        "profile_background_color" = CCCCCC;
+        "profile_background_image_url" = "http://pbs.twimg.com/profile_background_images/152590904/helmet.jpg";
+        "profile_background_image_url_https" = "https://pbs.twimg.com/profile_background_images/152590904/helmet.jpg";
+        "profile_background_tile" = 0;
+        "profile_banner_url" = "https://pbs.twimg.com/profile_banners/224/1489185934";
+        "profile_image_url" = "http://pbs.twimg.com/profile_images/458818845373784064/Ugb_RTHJ_normal.png";
+        "profile_image_url_https" = "https://pbs.twimg.com/profile_images/458818845373784064/Ugb_RTHJ_normal.png";
+        "profile_link_color" = 080108;
+        "profile_sidebar_border_color" = 87BC44;
+        "profile_sidebar_fill_color" = E0FF92;
+        "profile_text_color" = 000000;
+        "profile_use_background_image" = 1;
+        protected = 0;
+        "screen_name" = davepell;
+        "statuses_count" = 33891;
+        "time_zone" = "Pacific Time (US & Canada)";
+        "translator_type" = none;
+        url = "http://t.co/ff3Ukt1oyA";
+        "utc_offset" = "-25200";
+        verified = 1;
+    };
+}, {
+    contributors = "<null>";
+    coordinates = "<null>";
+    "created_at" = "Mon Oct 02 00:33:01 +0000 2017";
+    entities =     {
+        hashtags =         (
+        );
+        symbols =         (
+        );
+        urls =         (
+        );
+        "user_mentions" =         (
+                        {
+                id = 265755076;
+                "id_str" = 265755076;
+                indices =                 (
+                    0,
+                    12
+                );
+                name = "Ha Phan";
+                "screen_name" = hpdailyrant;
+            }
+        );
+    };
+    "favorite_count" = 0;
+    favorited = 0;
+    geo = "<null>";
+    id = 914649385501446145;
+    "id_str" = 914649385501446145;
+    "in_reply_to_screen_name" = hpdailyrant;
+    "in_reply_to_status_id" = 914628461955760129;
+    "in_reply_to_status_id_str" = 914628461955760129;
+    "in_reply_to_user_id" = 265755076;
+    "in_reply_to_user_id_str" = 265755076;
+    "is_quote_status" = 0;
+    lang = en;
+    place = "<null>";
+    "retweet_count" = 0;
+    retweeted = 0;
+    source = "<a href=\"http://tapbots.com/tweetbot\" rel=\"nofollow\">Tweetbot for i\U039fS</a>";
+    text = "@hpdailyrant I totally understand. Totally.";
+    truncated = 0;
+    user =     {
+        "contributors_enabled" = 0;
+        "created_at" = "Tue Dec 12 11:34:51 +0000 2006";
+        "default_profile" = 0;
+        "default_profile_image" = 0;
+        description = "UX consultant; Former comedy producer; Trained Chinese chef; Ecyclist; Non-binary; Disabled; Droll; Writing 'Designing a UX portfolio' https://t.co/CQh6IBMeTC";
+        entities =         {
+            description =             {
+                urls =                 (
+                                        {
+                        "display_url" = "lobsterbook.com";
+                        "expanded_url" = "http://lobsterbook.com/";
+                        indices =                         (
+                            135,
+                            158
+                        );
+                        url = "https://t.co/CQh6IBMeTC";
+                    }
+                );
+            };
+            url =             {
+                urls =                 (
+                                        {
+                        "display_url" = "chopstixmedia.com";
+                        "expanded_url" = "http://www.chopstixmedia.com/";
+                        indices =                         (
+                            0,
+                            23
+                        );
+                        url = "https://t.co/x5aXC8WvyI";
+                    }
+                );
+            };
+        };
+        "favourites_count" = 31025;
+        "follow_request_sent" = 0;
+        "followers_count" = 9951;
+        following = 1;
+        "friends_count" = 5255;
+        "geo_enabled" = 0;
+        "has_extended_profile" = 1;
+        id = 60163;
+        "id_str" = 60163;
+        "is_translation_enabled" = 0;
+        "is_translator" = 0;
+        lang = en;
+        "listed_count" = 871;
+        location = "United Kingdom";
+        name = "Ian Fenn";
+        notifications = 0;
+        "profile_background_color" = 9AE4E8;
+        "profile_background_image_url" = "http://abs.twimg.com/images/themes/theme1/bg.png";
+        "profile_background_image_url_https" = "https://abs.twimg.com/images/themes/theme1/bg.png";
+        "profile_background_tile" = 0;
+        "profile_banner_url" = "https://pbs.twimg.com/profile_banners/60163/1433076364";
+        "profile_image_url" = "http://pbs.twimg.com/profile_images/604992491834744832/cSAGDPIz_normal.png";
+        "profile_image_url_https" = "https://pbs.twimg.com/profile_images/604992491834744832/cSAGDPIz_normal.png";
+        "profile_link_color" = 3B94D9;
+        "profile_sidebar_border_color" = 87BC44;
+        "profile_sidebar_fill_color" = E0FF92;
+        "profile_text_color" = 000000;
+        "profile_use_background_image" = 1;
+        protected = 0;
+        "screen_name" = ifenn;
+        "statuses_count" = 733;
+        "time_zone" = London;
+        "translator_type" = none;
+        url = "https://t.co/x5aXC8WvyI";
+        "utc_offset" = 3600;
+        verified = 0;
+    };
+}, {
+    contributors = "<null>";
+    coordinates = "<null>";
+    "created_at" = "Mon Oct 02 00:33:00 +0000 2017";
+    entities =     {
+        hashtags =         (
+        );
+        symbols =         (
+        );
+        urls =         (
+                        {
+                "display_url" = "twitter.com/i/web/status/9\U2026";
+                "expanded_url" = "https://twitter.com/i/web/status/914649380811980800";
+                indices =                 (
+                    117,
+                    140
+                );
+                url = "https://t.co/yvcQx6DRz3";
+            }
+        );
+        "user_mentions" =         (
+        );
+    };
+    "favorite_count" = 66;
+    favorited = 0;
+    geo = "<null>";
+    id = 914649380811980800;
+    "id_str" = 914649380811980800;
+    "in_reply_to_screen_name" = "<null>";
+    "in_reply_to_status_id" = "<null>";
+    "in_reply_to_status_id_str" = "<null>";
+    "in_reply_to_user_id" = "<null>";
+    "in_reply_to_user_id_str" = "<null>";
+    "is_quote_status" = 0;
+    lang = en;
+    place = "<null>";
+    "possibly_sensitive" = 0;
+    "possibly_sensitive_appealable" = 0;
+    "retweet_count" = 36;
+    retweeted = 0;
+    source = "<a href=\"https://about.twitter.com/products/tweetdeck\" rel=\"nofollow\">TweetDeck</a>";
+    text = "Puerto Rico has perhaps the best research on interactions between hurricanes and forests in the Western Hemisphere.\U2026 https://t.co/yvcQx6DRz3";
+    truncated = 1;
+    user =     {
+        "contributors_enabled" = 0;
+        "created_at" = "Sun Apr 22 05:10:15 +0000 2007";
+        "default_profile" = 0;
+        "default_profile_image" = 0;
+        description = "News. Arts & Life. Music. Everything and more from NPR.\n\n\Ud83d\Udd75\Ufe0f Securely send us news tips: https://t.co/LPkf6Tsozm";
+        entities =         {
+            description =             {
+                urls =                 (
+                                        {
+                        "display_url" = "securedrop.npr.org";
+                        "expanded_url" = "http://securedrop.npr.org";
+                        indices =                         (
+                            88,
+                            111
+                        );
+                        url = "https://t.co/LPkf6Tsozm";
+                    }
+                );
+            };
+            url =             {
+                urls =                 (
+                                        {
+                        "display_url" = "npr.org";
+                        "expanded_url" = "http://www.npr.org";
+                        indices =                         (
+                            0,
+                            22
+                        );
+                        url = "http://t.co/SoL86ga4RI";
+                    }
+                );
+            };
+        };
+        "favourites_count" = 2265;
+        "follow_request_sent" = 0;
+        "followers_count" = 7248714;
+        following = 1;
+        "friends_count" = 72579;
+        "geo_enabled" = 0;
+        "has_extended_profile" = 1;
+        id = 5392522;
+        "id_str" = 5392522;
+        "is_translation_enabled" = 1;
+        "is_translator" = 0;
+        lang = en;
+        "listed_count" = 64436;
+        location = "";
+        name = NPR;
+        notifications = 0;
+        "profile_background_color" = 9AE4E8;
+        "profile_background_image_url" = "http://pbs.twimg.com/profile_background_images/414161733/nprnews_background.jpg";
+        "profile_background_image_url_https" = "https://pbs.twimg.com/profile_background_images/414161733/nprnews_background.jpg";
+        "profile_background_tile" = 0;
+        "profile_banner_url" = "https://pbs.twimg.com/profile_banners/5392522/1406560384";
+        "profile_image_url" = "http://pbs.twimg.com/profile_images/722199003845304320/s2zwEoao_normal.jpg";
+        "profile_image_url_https" = "https://pbs.twimg.com/profile_images/722199003845304320/s2zwEoao_normal.jpg";
+        "profile_link_color" = 0000FF;
+        "profile_sidebar_border_color" = 87BC44;
+        "profile_sidebar_fill_color" = E0FF92;
+        "profile_text_color" = 000000;
+        "profile_use_background_image" = 1;
+        protected = 0;
+        "screen_name" = NPR;
+        "statuses_count" = 131535;
+        "time_zone" = "Eastern Time (US & Canada)";
+        "translator_type" = none;
+        url = "http://t.co/SoL86ga4RI";
+        "utc_offset" = "-14400";
+        verified = 1;
+    };
+}, {
+    contributors = "<null>";
+    coordinates = "<null>";
+    "created_at" = "Mon Oct 02 00:32:22 +0000 2017";
+    entities =     {
+        hashtags =         (
+                        {
+                indices =                 (
+                    0,
+                    7
+                );
+                text = uxjobs;
+            }
+        );
+        symbols =         (
+        );
+        urls =         (
+                        {
+                "display_url" = "dld.bz/ggpqb";
+                "expanded_url" = "http://dld.bz/ggpqb";
+                indices =                 (
+                    88,
+                    111
+                );
+                url = "https://t.co/4ai5esRFSd";
+            }
+        );
+        "user_mentions" =         (
+        );
+    };
+    "favorite_count" = 0;
+    favorited = 0;
+    geo = "<null>";
+    id = 914649223555092487;
+    "id_str" = 914649223555092487;
+    "in_reply_to_screen_name" = "<null>";
+    "in_reply_to_status_id" = "<null>";
+    "in_reply_to_status_id_str" = "<null>";
+    "in_reply_to_user_id" = "<null>";
+    "in_reply_to_user_id_str" = "<null>";
+    "is_quote_status" = 0;
+    lang = en;
+    place = "<null>";
+    "possibly_sensitive" = 0;
+    "possibly_sensitive_appealable" = 0;
+    "retweet_count" = 1;
+    retweeted = 0;
+    source = "<a href=\"https://www.socialoomph.com\" rel=\"nofollow\">SocialOomph</a>";
+    text = "#uxjobs (Bay Area) Staff Product Designer, Sales Cloud - Salesforce - San Francisco, CA https://t.co/4ai5esRFSd";
+    truncated = 0;
+    user =     {
+        "contributors_enabled" = 0;
+        "created_at" = "Fri Apr 17 07:27:54 +0000 2009";
+        "default_profile" = 0;
+        "default_profile_image" = 0;
+        description = "Empowering YOU to find your next dream \U2661 job. Happy Designers = Happy Users. Here's to your success! #uxjobs #ux #design -- Created by: @bensykes";
+        entities =         {
+            description =             {
+                urls =                 (
+                );
+            };
+            url =             {
+                urls =                 (
+                                        {
+                        "display_url" = "UXJOBS.IO";
+                        "expanded_url" = "http://UXJOBS.IO";
+                        indices =                         (
+                            0,
+                            23
+                        );
+                        url = "https://t.co/qy5EP7ftHI";
+                    }
+                );
+            };
+        };
+        "favourites_count" = 2815;
+        "follow_request_sent" = 0;
+        "followers_count" = 22541;
+        following = 1;
+        "friends_count" = 8533;
+        "geo_enabled" = 1;
+        "has_extended_profile" = 1;
+        id = 32340428;
+        "id_str" = 32340428;
+        "is_translation_enabled" = 0;
+        "is_translator" = 0;
+        lang = en;
+        "listed_count" = 1203;
+        location = "HNL + SFO + NYC";
+        name = "UX Jobs";
+        notifications = 0;
+        "profile_background_color" = E8EBF2;
+        "profile_background_image_url" = "http://pbs.twimg.com/profile_background_images/9251919/ia_uxjobs_bg3.jpg";
+        "profile_background_image_url_https" = "https://pbs.twimg.com/profile_background_images/9251919/ia_uxjobs_bg3.jpg";
+        "profile_background_tile" = 0;
+        "profile_banner_url" = "https://pbs.twimg.com/profile_banners/32340428/1459654509";
+        "profile_image_url" = "http://pbs.twimg.com/profile_images/813348487798591489/ctMgiP5W_normal.jpg";
+        "profile_image_url_https" = "https://pbs.twimg.com/profile_images/813348487798591489/ctMgiP5W_normal.jpg";
+        "profile_link_color" = BC1215;
+        "profile_sidebar_border_color" = 4242FE;
+        "profile_sidebar_fill_color" = E8EBF2;
+        "profile_text_color" = 333333;
+        "profile_use_background_image" = 1;
+        protected = 0;
+        "screen_name" = "IA_UXJOBS";
+        "statuses_count" = 99556;
+        "time_zone" = "Eastern Time (US & Canada)";
+        "translator_type" = none;
+        url = "https://t.co/qy5EP7ftHI";
+        "utc_offset" = "-14400";
+        verified = 0;
+    };
+}, {
+    contributors = "<null>";
+    coordinates = "<null>";
+    "created_at" = "Mon Oct 02 00:31:53 +0000 2017";
+    entities =     {
+        hashtags =         (
+        );
+        symbols =         (
+        );
+        urls =         (
+                        {
+                "display_url" = "twitter.com/ryanchris/stat\U2026";
+                "expanded_url" = "https://twitter.com/ryanchris/status/914606387279273984";
+                indices =                 (
+                    110,
+                    133
+                );
+                url = "https://t.co/oE0RJMsEGQ";
+            }
+        );
+        "user_mentions" =         (
+        );
+    };
+    "favorite_count" = 0;
+    favorited = 0;
+    geo = "<null>";
+    id = 914649098493493249;
+    "id_str" = 914649098493493249;
+    "in_reply_to_screen_name" = "<null>";
+    "in_reply_to_status_id" = "<null>";
+    "in_reply_to_status_id_str" = "<null>";
+    "in_reply_to_user_id" = "<null>";
+    "in_reply_to_user_id_str" = "<null>";
+    "is_quote_status" = 1;
+    lang = en;
+    place = "<null>";
+    "possibly_sensitive" = 0;
+    "possibly_sensitive_appealable" = 0;
+    "quoted_status" =     {
+        contributors = "<null>";
+        coordinates = "<null>";
+        "created_at" = "Sun Oct 01 21:42:09 +0000 2017";
+        entities =         {
+            hashtags =             (
+            );
+            symbols =             (
+            );
+            urls =             (
+                                {
+                    "display_url" = "twitter.com/MarkHarrisNYC/\U2026";
+                    "expanded_url" = "https://twitter.com/MarkHarrisNYC/status/914570166599606273";
+                    indices =                     (
+                        88,
+                        111
+                    );
+                    url = "https://t.co/ZcT3gorLBG";
+                }
+            );
+            "user_mentions" =             (
+            );
+        };
+        "favorite_count" = 9;
+        favorited = 0;
+        geo = "<null>";
+        id = 914606387279273984;
+        "id_str" = 914606387279273984;
+        "in_reply_to_screen_name" = "<null>";
+        "in_reply_to_status_id" = "<null>";
+        "in_reply_to_status_id_str" = "<null>";
+        "in_reply_to_user_id" = "<null>";
+        "in_reply_to_user_id_str" = "<null>";
+        "is_quote_status" = 1;
+        lang = en;
+        place = "<null>";
+        "possibly_sensitive" = 0;
+        "possibly_sensitive_appealable" = 0;
+        "quoted_status_id" = 914570166599606273;
+        "quoted_status_id_str" = 914570166599606273;
+        "retweet_count" = 2;
+        retweeted = 0;
+        source = "<a href=\"http://tapbots.com/tweetbot\" rel=\"nofollow\">Tweetbot for i\U039fS</a>";
+        text = "4) Your perfect moral clarity might be at odds with the complexity of a given situation https://t.co/ZcT3gorLBG";
+        truncated = 0;
+        user =         {
+            "contributors_enabled" = 0;
+            "created_at" = "Mon Nov 20 23:48:09 +0000 2006";
+            "default_profile" = 0;
+            "default_profile_image" = 0;
+            description = "Design Director, News Feed at Facebook. Co-founder @aboutdotme, ex-@designinguber. You met me at a very strange time in my life.";
+            entities =             {
+                description =                 {
+                    urls =                     (
+                    );
+                };
+                url =                 {
+                    urls =                     (
+                                                {
+                            "display_url" = "about.me/ryanchris";
+                            "expanded_url" = "http://about.me/ryanchris";
+                            indices =                             (
+                                0,
+                                23
+                            );
+                            url = "https://t.co/jDaIA1qnHF";
+                        }
+                    );
+                };
+            };
+            "favourites_count" = 40194;
+            "follow_request_sent" = 0;
+            "followers_count" = 12137;
+            following = 0;
+            "friends_count" = 314;
+            "geo_enabled" = 1;
+            "has_extended_profile" = 1;
+            id = 13349;
+            "id_str" = 13349;
+            "is_translation_enabled" = 0;
+            "is_translator" = 0;
+            lang = en;
+            "listed_count" = 689;
+            location = SF;
+            name = "Ryan Freitas";
+            notifications = 0;
+            "profile_background_color" = 000000;
+            "profile_background_image_url" = "http://pbs.twimg.com/profile_background_images/4862903/secret2.png";
+            "profile_background_image_url_https" = "https://pbs.twimg.com/profile_background_images/4862903/secret2.png";
+            "profile_background_tile" = 0;
+            "profile_banner_url" = "https://pbs.twimg.com/profile_banners/13349/1491453808";
+            "profile_image_url" = "http://pbs.twimg.com/profile_images/850013597916831744/gfkHn6Ex_normal.jpg";
+            "profile_image_url_https" = "https://pbs.twimg.com/profile_images/850013597916831744/gfkHn6Ex_normal.jpg";
+            "profile_link_color" = 0061FF;
+            "profile_sidebar_border_color" = ABABAB;
+            "profile_sidebar_fill_color" = FFFFFF;
+            "profile_text_color" = 333333;
+            "profile_use_background_image" = 0;
+            protected = 0;
+            "screen_name" = ryanchris;
+            "statuses_count" = 12913;
+            "time_zone" = "Pacific Time (US & Canada)";
+            "translator_type" = none;
+            url = "https://t.co/jDaIA1qnHF";
+            "utc_offset" = "-25200";
+            verified = 0;
+        };
+    };
+    "quoted_status_id" = 914606387279273984;
+    "quoted_status_id_str" = 914606387279273984;
+    "retweet_count" = 0;
+    retweeted = 0;
+    source = "<a href=\"http://tapbots.com/tweetbot\" rel=\"nofollow\">Tweetbot for i\U039fS</a>";
+    text = "Humans are good at over complicating things. I thought our role as a designer was to cut through all of that. https://t.co/oE0RJMsEGQ";
+    truncated = 0;
+    user =     {
+        "contributors_enabled" = 0;
+        "created_at" = "Tue Dec 12 11:34:51 +0000 2006";
+        "default_profile" = 0;
+        "default_profile_image" = 0;
+        description = "UX consultant; Former comedy producer; Trained Chinese chef; Ecyclist; Non-binary; Disabled; Droll; Writing 'Designing a UX portfolio' https://t.co/CQh6IBMeTC";
+        entities =         {
+            description =             {
+                urls =                 (
+                                        {
+                        "display_url" = "lobsterbook.com";
+                        "expanded_url" = "http://lobsterbook.com/";
+                        indices =                         (
+                            135,
+                            158
+                        );
+                        url = "https://t.co/CQh6IBMeTC";
+                    }
+                );
+            };
+            url =             {
+                urls =                 (
+                                        {
+                        "display_url" = "chopstixmedia.com";
+                        "expanded_url" = "http://www.chopstixmedia.com/";
+                        indices =                         (
+                            0,
+                            23
+                        );
+                        url = "https://t.co/x5aXC8WvyI";
+                    }
+                );
+            };
+        };
+        "favourites_count" = 31025;
+        "follow_request_sent" = 0;
+        "followers_count" = 9951;
+        following = 1;
+        "friends_count" = 5255;
+        "geo_enabled" = 0;
+        "has_extended_profile" = 1;
+        id = 60163;
+        "id_str" = 60163;
+        "is_translation_enabled" = 0;
+        "is_translator" = 0;
+        lang = en;
+        "listed_count" = 871;
+        location = "United Kingdom";
+        name = "Ian Fenn";
+        notifications = 0;
+        "profile_background_color" = 9AE4E8;
+        "profile_background_image_url" = "http://abs.twimg.com/images/themes/theme1/bg.png";
+        "profile_background_image_url_https" = "https://abs.twimg.com/images/themes/theme1/bg.png";
+        "profile_background_tile" = 0;
+        "profile_banner_url" = "https://pbs.twimg.com/profile_banners/60163/1433076364";
+        "profile_image_url" = "http://pbs.twimg.com/profile_images/604992491834744832/cSAGDPIz_normal.png";
+        "profile_image_url_https" = "https://pbs.twimg.com/profile_images/604992491834744832/cSAGDPIz_normal.png";
+        "profile_link_color" = 3B94D9;
+        "profile_sidebar_border_color" = 87BC44;
+        "profile_sidebar_fill_color" = E0FF92;
+        "profile_text_color" = 000000;
+        "profile_use_background_image" = 1;
+        protected = 0;
+        "screen_name" = ifenn;
+        "statuses_count" = 733;
+        "time_zone" = London;
+        "translator_type" = none;
+        url = "https://t.co/x5aXC8WvyI";
+        "utc_offset" = 3600;
+        verified = 0;
+    };
+}, {
+    contributors = "<null>";
+    coordinates = "<null>";
+    "created_at" = "Mon Oct 02 00:31:06 +0000 2017";
+    entities =     {
+        hashtags =         (
+        );
+        symbols =         (
+        );
+        urls =         (
+                        {
+                "display_url" = "twitter.com/i/web/status/9\U2026";
+                "expanded_url" = "https://twitter.com/i/web/status/914648902543958017";
+                indices =                 (
+                    117,
+                    140
+                );
+                url = "https://t.co/13YRCbKt2p";
+            }
+        );
+        "user_mentions" =         (
+        );
+    };
+    "favorite_count" = 109;
+    favorited = 0;
+    geo = "<null>";
+    id = 914648902543958017;
+    "id_str" = 914648902543958017;
+    "in_reply_to_screen_name" = "<null>";
+    "in_reply_to_status_id" = "<null>";
+    "in_reply_to_status_id_str" = "<null>";
+    "in_reply_to_user_id" = "<null>";
+    "in_reply_to_user_id_str" = "<null>";
+    "is_quote_status" = 0;
+    lang = en;
+    place = "<null>";
+    "possibly_sensitive" = 0;
+    "possibly_sensitive_appealable" = 0;
+    "retweet_count" = 70;
+    retweeted = 0;
+    source = "<a href=\"https://studio.twitter.com\" rel=\"nofollow\">Media Studio</a>";
+    text = "Thousands rally in Madrid's La Puerta del Sol square in solidarity with people of Catalonia as Spanish police crack\U2026 https://t.co/13YRCbKt2p";
+    truncated = 1;
+    user =     {
+        "contributors_enabled" = 0;
+        "created_at" = "Sat Apr 04 12:40:32 +0000 2009";
+        "default_profile" = 0;
+        "default_profile_image" = 0;
+        description = "See the whole picture with @ABC News. Facebook: https://t.co/ewMNZ54axm Instagram: https://t.co/pPlGmNHztz";
+        entities =         {
+            description =             {
+                urls =                 (
+                                        {
+                        "display_url" = "facebook.com/abcnews";
+                        "expanded_url" = "https://www.facebook.com/abcnews";
+                        indices =                         (
+                            48,
+                            71
+                        );
+                        url = "https://t.co/ewMNZ54axm";
+                    },
+                                        {
+                        "display_url" = "instagram.com/abcnews";
+                        "expanded_url" = "https://www.instagram.com/abcnews";
+                        indices =                         (
+                            83,
+                            106
+                        );
+                        url = "https://t.co/pPlGmNHztz";
+                    }
+                );
+            };
+            url =             {
+                urls =                 (
+                                        {
+                        "display_url" = "ABCNews.com";
+                        "expanded_url" = "http://ABCNews.com";
+                        indices =                         (
+                            0,
+                            23
+                        );
+                        url = "https://t.co/v7GWW7ho1l";
+                    }
+                );
+            };
+        };
+        "favourites_count" = 459;
+        "follow_request_sent" = 0;
+        "followers_count" = 12185685;
+        following = 1;
+        "friends_count" = 738;
+        "geo_enabled" = 1;
+        "has_extended_profile" = 0;
+        id = 28785486;
+        "id_str" = 28785486;
+        "is_translation_enabled" = 1;
+        "is_translator" = 0;
+        lang = en;
+        "listed_count" = 50575;
+        location = "New York City / Worldwide";
+        name = "ABC News";
+        notifications = 0;
+        "profile_background_color" = 6E8EB5;
+        "profile_background_image_url" = "http://pbs.twimg.com/profile_background_images/441965491024719872/pAv-lzCZ.jpeg";
+        "profile_background_image_url_https" = "https://pbs.twimg.com/profile_background_images/441965491024719872/pAv-lzCZ.jpeg";
+        "profile_background_tile" = 0;
+        "profile_banner_url" = "https://pbs.twimg.com/profile_banners/28785486/1505493568";
+        "profile_image_url" = "http://pbs.twimg.com/profile_images/877547979363758080/ny06RNTT_normal.jpg";
+        "profile_image_url_https" = "https://pbs.twimg.com/profile_images/877547979363758080/ny06RNTT_normal.jpg";
+        "profile_link_color" = 336699;
+        "profile_sidebar_border_color" = FFFFFF;
+        "profile_sidebar_fill_color" = DDEEF6;
+        "profile_text_color" = 333333;
+        "profile_use_background_image" = 1;
+        protected = 0;
+        "screen_name" = ABC;
+        "statuses_count" = 182459;
+        "time_zone" = "Eastern Time (US & Canada)";
+        "translator_type" = regular;
+        url = "https://t.co/v7GWW7ho1l";
+        "utc_offset" = "-14400";
+        verified = 1;
+    };
+}, {
+    contributors = "<null>";
+    coordinates = "<null>";
+    "created_at" = "Mon Oct 02 00:30:47 +0000 2017";
+    entities =     {
+        hashtags =         (
+        );
+        symbols =         (
+        );
+        urls =         (
+                        {
+                "display_url" = "reut.rs/2xKcHry";
+                "expanded_url" = "http://reut.rs/2xKcHry";
+                indices =                 (
+                    58,
+                    81
+                );
+                url = "https://t.co/Ebd2MCXElw";
+            }
+        );
+        "user_mentions" =         (
+        );
+    };
+    "favorite_count" = 12;
+    favorited = 0;
+    geo = "<null>";
+    id = 914648821753372673;
+    "id_str" = 914648821753372673;
+    "in_reply_to_screen_name" = "<null>";
+    "in_reply_to_status_id" = "<null>";
+    "in_reply_to_status_id_str" = "<null>";
+    "in_reply_to_user_id" = "<null>";
+    "in_reply_to_user_id_str" = "<null>";
+    "is_quote_status" = 0;
+    lang = en;
+    place = "<null>";
+    "possibly_sensitive" = 0;
+    "possibly_sensitive_appealable" = 0;
+    "retweet_count" = 14;
+    retweeted = 0;
+    source = "<a href=\"http://www.socialflow.com\" rel=\"nofollow\">SocialFlow</a>";
+    text = "Euro jolted briefly by Spanish vote, Asia data augur well https://t.co/Ebd2MCXElw";
+    truncated = 0;
+    user =     {
+        "contributors_enabled" = 0;
+        "created_at" = "Tue Mar 20 17:46:05 +0000 2007";
+        "default_profile" = 0;
+        "default_profile_image" = 0;
+        description = "Top and breaking news, pictures, and videos from Reuters.";
+        entities =         {
+            description =             {
+                urls =                 (
+                );
+            };
+            url =             {
+                urls =                 (
+                                        {
+                        "display_url" = "reuters.com";
+                        "expanded_url" = "http://www.reuters.com";
+                        indices =                         (
+                            0,
+                            22
+                        );
+                        url = "http://t.co/BmHxhkm3Mh";
+                    }
+                );
+            };
+        };
+        "favourites_count" = 813;
+        "follow_request_sent" = 0;
+        "followers_count" = 18791826;
+        following = 1;
+        "friends_count" = 1061;
+        "geo_enabled" = 0;
+        "has_extended_profile" = 0;
+        id = 1652541;
+        "id_str" = 1652541;
+        "is_translation_enabled" = 1;
+        "is_translator" = 0;
+        lang = en;
+        "listed_count" = 111892;
+        location = "Around the world";
+        name = "Reuters Top News";
+        notifications = 0;
+        "profile_background_color" = 444444;
+        "profile_background_image_url" = "http://pbs.twimg.com/profile_background_images/735542174/340f8869cdcabbcc436096587143cc38.png";
+        "profile_background_image_url_https" = "https://pbs.twimg.com/profile_background_images/735542174/340f8869cdcabbcc436096587143cc38.png";
+        "profile_background_tile" = 0;
+        "profile_banner_url" = "https://pbs.twimg.com/profile_banners/1652541/1473859324";
+        "profile_image_url" = "http://pbs.twimg.com/profile_images/877554927932891136/ZBEs235N_normal.jpg";
+        "profile_image_url_https" = "https://pbs.twimg.com/profile_images/877554927932891136/ZBEs235N_normal.jpg";
+        "profile_link_color" = 006F97;
+        "profile_sidebar_border_color" = 000000;
+        "profile_sidebar_fill_color" = F5F5F5;
+        "profile_text_color" = 000000;
+        "profile_use_background_image" = 1;
+        protected = 0;
+        "screen_name" = Reuters;
+        "statuses_count" = 211068;
+        "time_zone" = "Eastern Time (US & Canada)";
+        "translator_type" = regular;
+        url = "http://t.co/BmHxhkm3Mh";
+        "utc_offset" = "-14400";
+        verified = 1;
+    };
+}]

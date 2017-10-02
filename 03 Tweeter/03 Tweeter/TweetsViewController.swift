@@ -8,18 +8,14 @@
 
 import UIKit
 
-/*
-class DataManager {
-    
-    static let shared = DataManager()
-    var firstVC: UIViewController = TweetsViewController()
-}
-*/
-
 class TweetsViewController: UIViewController,  UITableViewDelegate, UITableViewDataSource, UIScrollViewDelegate {
 
     
     var tweets: [Tweet]!
+    var newTweet: Tweet!
+    
+    var isFaved: [Bool] = [false]
+
     
     @IBOutlet weak var tableView: UITableView!
     
@@ -29,8 +25,8 @@ class TweetsViewController: UIViewController,  UITableViewDelegate, UITableViewD
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //DataManager.shared.firstVC = self
-        //NotificationCenter.default.addObserver(self, selector: #selector(loadList), name: NSNotification.Name(rawValue: "load"), object: nil)
+        print("TwitterViewController view loaded")
+        //NotificationCenter.default.addObserver(self, selector: #selector(loadList), name: NSNotification.Name(rawValue: "load"), object: newTweet)
         
         tableView.dataSource = self
         tableView.delegate = self
@@ -50,7 +46,15 @@ class TweetsViewController: UIViewController,  UITableViewDelegate, UITableViewD
         
         TwitterClient.sharedInstance?.homeTimeline(success: { (tweets: [Tweet]) -> () in
             
+            print("Twitter general hometimeline triggered")
             self.tweets = tweets
+            
+            if self.newTweet != nil {
+                self.tweets.append(self.newTweet)
+            } else {
+                print("newTweets is nil")
+            }
+            
             self.tableView.reloadData()
             
         }, failure: { (error: Error) in
@@ -110,7 +114,7 @@ class TweetsViewController: UIViewController,  UITableViewDelegate, UITableViewD
         
         cell.tweetAuthorNameLabel.text = tweet?.tweetAuthorName
         cell.tweetHandleLabel.text = "@\(tweet?.tweetHandle ?? "")"
-        cell.timestampLabel.text = "\(tweet?.timestamp)"
+        cell.timestampLabel.text = "\((tweet?.timestamp)!)"
         
         //replyButton =
         //retweetButton =
@@ -124,7 +128,8 @@ class TweetsViewController: UIViewController,  UITableViewDelegate, UITableViewD
         
         return cell
     }
- 
+
+    
     func refreshControlAction(_ refreshControl: UIRefreshControl) {
         
         tableView.dataSource = self
@@ -163,8 +168,56 @@ class TweetsViewController: UIViewController,  UITableViewDelegate, UITableViewD
         TwitterClient.sharedInstance?.logout()
     }
     
+    @IBAction func onFavButton(_ sender: Any) {
+      
+        let section = 0
+        let row = (sender as AnyObject).tag
+        let indexPath = IndexPath(row: row!, section: section)
+        let cell: TweetCell = tableView.cellForRow(at: indexPath) as! TweetCell
+        
+        var tweetToFavOrUnFav = tweets![indexPath.row]
+        
+        //print("default fav count: \(tweetToFavOrUnFav.favoritesCount)")
+        
+         if self.isFaved[indexPath.row] == false {
+         
+            TwitterClient.sharedInstance?.favTweet(id: tweetToFavOrUnFav.id, success: { (tweet: Tweet) in
+                
+                tweetToFavOrUnFav = tweet
+                
+                cell.favButton.setImage(UIImage(named:"faved.png"), for: .normal)
+                cell.favCountLabel.text = "\(tweetToFavOrUnFav.favoritesCount)"
+                cell.favCountLabel.textColor = UIColor(red:0.87, green:0.16, blue:0.38, alpha:1.0)
+                
+                //print("Faved! count: \(tweetToFavOrUnFav.favoritesCount)")
+                self.isFaved[indexPath.row] = true
+                
+            }, failure: { (error: Error) in
+                print(error)
+            })
+         } else if self.isFaved[indexPath.row] == true {
+            TwitterClient.sharedInstance?.unFavTweet(id: tweetToFavOrUnFav.id, success: { (tweet: Tweet) in
+                
+                tweetToFavOrUnFav = tweet
+                cell.favButton.setImage(UIImage(named:"fav.png"), for: .normal)
+                cell.favCountLabel.text = "\(tweetToFavOrUnFav.favoritesCount)"
+                cell.favCountLabel.textColor = UIColor(red:0.70, green:0.70, blue:0.70, alpha:1.0)
+                //print("Unfaved! fav count: \(tweetToFavOrUnFav.favoritesCount)")
+                self.isFaved[indexPath.row] = false
+                
+            }, failure: { (error: Error) in
+                print(error)
+            })
+
+         }
+
+
+    }
+    
+    
     func loadList(){
         //load data here
+        print("loadList is triggered")
         self.tableView.reloadData()
     }
     
@@ -189,6 +242,8 @@ class TweetsViewController: UIViewController,  UITableViewDelegate, UITableViewD
                     loadingMoreView?.startAnimating()
                 
                     // ... Code to load more results ...
+                
+                
                     TwitterClient.sharedInstance?.homeTimeline(success: { (tweets: [Tweet]) -> () in
                     
                         self.tweets = tweets

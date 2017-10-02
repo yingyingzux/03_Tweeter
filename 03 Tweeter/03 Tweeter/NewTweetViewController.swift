@@ -37,17 +37,21 @@ class NewTweetViewController: UIViewController, UITextViewDelegate {
         tweetAuthorNameLabel.text = user!.name
         tweetHandleLabel.text = "@\(user!.screenname ?? "missing_handle")"
         
-        
-        //newTweetTextView.text = ""
-        //newTweetTextView.textColor = UIColor.lightGray
-        
         newTweetTextView.becomeFirstResponder()
     }
-
-    @IBAction func onTweetButton(_ sender: Any) {
-        TwitterClient.sharedInstance?.postNewTweet(text: newTweetTextView.text)
-        //DataManager.firstVC.tableView.reloadData()
-        //NotificationCenter.default.post(name: NSNotification.Name(rawValue: "load"), object: nil)
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        TwitterClient.sharedInstance?.postNewTweet(text: newTweetTextView.text, success: { (tweets: Tweet) -> () in
+            let tweetsViewController = segue.destination as! TweetsViewController
+            
+            tweetsViewController.newTweet = self.tweet
+            
+        }, failure: { (error: Error) in
+            print(error.localizedDescription)
+        })
+        
+        //NotificationCenter.default.post(name: NSNotification.Name(rawValue: "load"), object: tweet)
+        print("posted new tweet onTweetButton")
     }
     
     override func awakeFromNib() {

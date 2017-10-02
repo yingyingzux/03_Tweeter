@@ -18,6 +18,8 @@ class Tweet: NSObject {
     var timestamp: Date?
     var retweetCount: Int = 0
     var favoritesCount: Int = 0
+    var id: Int = 0
+    var idRetweetOriginal: Int = 0
     
     var retweetedStatusDictionary: NSDictionary?
     var retweetedUserDictionary: NSDictionary?
@@ -29,12 +31,15 @@ class Tweet: NSObject {
         userDictionary = dictionary["user"] as? NSDictionary
         retweetedStatusDictionary = dictionary["retweeted_status"] as? NSDictionary
         
+        id = dictionary["id"] as! Int
+        
         retweetCount = (dictionary["retweet_count"] as? Int) ?? 0
         favoritesCount = (dictionary["favorite_count"] as? Int) ?? 0
         
         if retweetedStatusDictionary != nil { // retweetStatusDictionary exits
             retweetedUserDictionary = retweetedStatusDictionary?["user"] as? NSDictionary
             retweetAuthorName = userDictionary?["name"] as? String
+            idRetweetOriginal = retweetedStatusDictionary?["id"] as! Int
             
             //print("retweetAuthorName - aka userDictionary-name: \(retweetAuthorName)")
             
