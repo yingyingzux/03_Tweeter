@@ -110,13 +110,4 @@ class TwitterClient: BDBOAuth1SessionManager {
     
 }
 
-//let dictionaries = response as! [NSDictionary]
-//let tweets = Tweet.tweetsWithArray(dictionaries: dictionaries)
-
-/*
- for tweet in tweets {
- print("post new tweet: \(tweet)")
- }
- */
-
 
