@@ -41,6 +41,7 @@ Please list two areas of the assignment you'd like to **discuss further with you
 Here's a walkthrough of implemented user stories:
 
 <img src='https://raw.githubusercontent.com/yzhanghearsay/03_Tweeter/master/03%20Tweeter/tweeter.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://raw.githubusercontent.com/yzhanghearsay/03_Tweeter/master/03%20Tweeter/tweeter-additional.png' title='screenshot' width='686' alt='screenshot'>
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
