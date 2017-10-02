@@ -2,7 +2,7 @@
 
 **Tweeter** is a basic twitter app to read and compose tweets from the [Twitter API](https://apps.twitter.com/).
 
-Time spent: **X** hours spent in total
+Time spent: **25.5** hours spent in total
 
 ## User Stories
 
@@ -20,10 +20,10 @@ The following **optional** features are implemented:
 
 - [x] When composing, you should have a countdown in the upper right for the tweet limit.
 - [ ] After creating a new tweet, a user should be able to view it in the timeline immediately without refetching the timeline from the network.
-- [ ] Retweeting and favoriting should increment the retweet and favorite count.
-- [ ] User should be able to unretweet and unfavorite and should decrement the retweet and favorite count.
+- [x] Retweeting and favoriting should increment the retweet and favorite count. **--Yingying: works well on details page, but wasn't able to get row number on cells in tweet list page**'
+- [x] User should be able to unretweet and unfavorite and should decrement the retweet and favorite count. **--Yingying: only did unfavorite**
 - [ ] Replies should be prefixed with the username and the reply_id should be set when posting the tweet,
-- [ ] User can load more tweets once they reach the bottom of the feed using infinite loading similar to the actual Twitter client.
+- [x] User can load more tweets once they reach the bottom of the feed using infinite loading similar to the actual Twitter client. **--Yingying: half-baked.. keep hitting rate limit with this**
 
 The following **additional** features are implemented:
 
@@ -32,13 +32,15 @@ The following **additional** features are implemented:
 Please list two areas of the assignment you'd like to **discuss further with your peers** during the next class (examples include better ways to implement something, how to extend your app in certain ways, etc):
 
 1. App permission seems weird. I made it "read and write" in the beginning and it didn't let me post new tweet. After changed to Read, write and access direct message, then I can. I think this may be due to not logout or clean Simulator sessions.sss
-2.
+2. There's no reply_count in tweet JSON that we retrieve back, but it exists in the Tweet Object on the Twitter dev site.
+3. I had a hard time getting the row number out of clicked cell.
+4. I got a 404 for retweet func, I checked all places and not sure why it was not working. I think it should be very similar to how the favorite func was written.
 
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://raw.githubusercontent.com/yzhanghearsay/03_Tweeter/master/03%20Tweeter/tweeter.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
