@@ -20,6 +20,12 @@
 		FBD616631F7C7DE2007B8CE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBD616621F7C7DE2007B8CE3 /* Assets.xcassets */; };
 		FBD616661F7C7DE2007B8CE3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBD616641F7C7DE2007B8CE3 /* LaunchScreen.storyboard */; };
 		FBD90FF01F7CA3B9002E9129 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD90FEF1F7CA3B9002E9129 /* LoginViewController.swift */; };
+		FBDFF6561F87316700E1B23C /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDFF6551F87316700E1B23C /* ProfileViewController.swift */; };
+		FBDFF6581F87319D00E1B23C /* MentionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDFF6571F87319D00E1B23C /* MentionsViewController.swift */; };
+		FBDFF65A1F8731D700E1B23C /* AccountsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDFF6591F8731D700E1B23C /* AccountsViewController.swift */; };
+		FBDFF65C1F87326300E1B23C /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDFF65B1F87326300E1B23C /* MenuViewController.swift */; };
+		FBDFF65E1F8737EF00E1B23C /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDFF65D1F8737EF00E1B23C /* MenuCell.swift */; };
+		FBDFF6601F87392600E1B23C /* HamburgerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDFF65F1F87392600E1B23C /* HamburgerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +46,12 @@
 		FBD616651F7C7DE2007B8CE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FBD616671F7C7DE2007B8CE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FBD90FEF1F7CA3B9002E9129 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		FBDFF6551F87316700E1B23C /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		FBDFF6571F87319D00E1B23C /* MentionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MentionsViewController.swift; sourceTree = "<group>"; };
+		FBDFF6591F8731D700E1B23C /* AccountsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountsViewController.swift; sourceTree = "<group>"; };
+		FBDFF65B1F87326300E1B23C /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		FBDFF65D1F8737EF00E1B23C /* MenuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
+		FBDFF65F1F87392600E1B23C /* HamburgerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HamburgerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				FB2BFBF21F8004D000A06745 /* TweetCell.swift */,
+				FBDFF65D1F8737EF00E1B23C /* MenuCell.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -95,6 +108,11 @@
 				FB2BFBF01F7F615200A06745 /* TweetsViewController.swift */,
 				FB2BFBF41F800A7500A06745 /* DetailsViewController.swift */,
 				FB2BFBF61F800AF000A06745 /* NewTweetViewController.swift */,
+				FBDFF6551F87316700E1B23C /* ProfileViewController.swift */,
+				FBDFF6571F87319D00E1B23C /* MentionsViewController.swift */,
+				FBDFF6591F8731D700E1B23C /* AccountsViewController.swift */,
+				FBDFF65B1F87326300E1B23C /* MenuViewController.swift */,
+				FBDFF65F1F87392600E1B23C /* HamburgerViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -275,14 +293,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBDFF65E1F8737EF00E1B23C /* MenuCell.swift in Sources */,
 				FB2BFBEF1F7F537D00A06745 /* TwitterClient.swift in Sources */,
 				FB2BFBF31F8004D000A06745 /* TweetCell.swift in Sources */,
+				FBDFF6601F87392600E1B23C /* HamburgerViewController.swift in Sources */,
+				FBDFF6561F87316700E1B23C /* ProfileViewController.swift in Sources */,
 				FBD90FF01F7CA3B9002E9129 /* LoginViewController.swift in Sources */,
+				FBDFF6581F87319D00E1B23C /* MentionsViewController.swift in Sources */,
 				FB2BFBF51F800A7500A06745 /* DetailsViewController.swift in Sources */,
 				FB2BFBF11F7F615200A06745 /* TweetsViewController.swift in Sources */,
+				FBDFF65C1F87326300E1B23C /* MenuViewController.swift in Sources */,
 				FBD6165C1F7C7DE2007B8CE3 /* AppDelegate.swift in Sources */,
 				FB2E62491F7E19D9008CCBF3 /* User.swift in Sources */,
 				FB2BFBF71F800AF000A06745 /* NewTweetViewController.swift in Sources */,
+				FBDFF65A1F8731D700E1B23C /* AccountsViewController.swift in Sources */,
 				FB2E624B1F7E19E8008CCBF3 /* Tweet.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

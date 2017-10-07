@@ -153,9 +153,8 @@ class TwitterClient: BDBOAuth1SessionManager {
 
     
     func retweet(id: Int, success: @escaping (Tweet) -> (), failure: @escaping (Error) -> ()) {
-        let params = ["id": id]
-        
-        TwitterClient.sharedInstance?.post("/1.1/statuses/retweet/:id.json", parameters: params, progress: nil, success: { (task: URLSessionDataTask, response: Any?) -> Void in
+        let path = "/1.1/statuses/retweet/\(id).json"
+        TwitterClient.sharedInstance?.post(path, parameters: nil, progress: nil, success: { (task: URLSessionDataTask, response: Any?) -> Void in
             
             let tweetDictionary = response as! NSDictionary
             let retweetedTweet = Tweet(dictionary: tweetDictionary)
@@ -169,9 +168,9 @@ class TwitterClient: BDBOAuth1SessionManager {
     }
     
     func unRetweet(id: Int, success: @escaping (Tweet) -> (), failure: @escaping (Error) -> ()) {
-        let params = ["id": id]
+        let path = "/1.1/statuses/retweet/\(id).json"
         
-        TwitterClient.sharedInstance?.post("/1.1/statuses/unretweet/:id.json", parameters: params, progress: nil, success: { (task: URLSessionDataTask, response: Any?) -> Void in
+        TwitterClient.sharedInstance?.post(path, parameters: nil, progress: nil, success: { (task: URLSessionDataTask, response: Any?) -> Void in
             
             let tweetDictionary = response as! NSDictionary
             let unRetweetedTweet = Tweet(dictionary: tweetDictionary)

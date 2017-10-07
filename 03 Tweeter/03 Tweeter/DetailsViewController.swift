@@ -119,7 +119,7 @@ class DetailsViewController: UIViewController {
             TwitterClient.sharedInstance?.retweet(id: tweet.id, success: { (tweet: Tweet) in
                 
                 self.tweet = tweet
-                self.retweetButton.setImage(UIImage(named:"retweeted.png"), for: .normal)
+                self.retweetButton.setImage(UIImage(named:"Retweeted.png"), for: .normal)
                 self.retweetCountLabel.text = "\(tweet.retweetCount)"
                 print("Retweeted! count: \(self.tweet.retweetCount)")
                 self.isFaved = true

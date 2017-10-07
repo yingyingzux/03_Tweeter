@@ -1,47 +1,49 @@
-# Project 3 - *Tweeter*
+# Project 4 - *Tweeter*
 
-**Tweeter** is a basic twitter app to read and compose tweets from the [Twitter API](https://apps.twitter.com/).
-
-Time spent: **25.5** hours spent in total
+Time spent: **X** hours spent in total
 
 ## User Stories
 
 The following **required** functionality is completed:
 
-- [x] User can sign in using OAuth login flow.
-- [x] User can view last 20 tweets from their home timeline.
-- [x] The current signed in user will be persisted across restarts.
-- [x] In the home timeline, user can view tweet with the user profile picture, username, tweet text, and timestamp.  In other words, design the custom cell with the proper Auto Layout settings.  You will also need to augment the model classes.
-- [x] User can pull to refresh.
-- [x] User can compose a new tweet by tapping on a compose button.
-- [x] User can tap on a tweet to view it, with controls to retweet, favorite, and reply.
+- [x] Hamburger menu
+- [x] Dragging anywhere in the view should reveal the menu.
+- [ ] The menu should include links to your profile, the home timeline, and the mentions view.
+- [ ] The menu can look similar to the example or feel free to take liberty with the UI.
+- [ ] Profile page
+- [ ] Contains the user header view
+- [ ] Contains a section with the users basic stats: # tweets, # following, # followers
+- [ ] Home Timeline
+- [ ] Tapping on a user image should bring up that user's profile page
 
 The following **optional** features are implemented:
 
-- [x] When composing, you should have a countdown in the upper right for the tweet limit.
-- [ ] After creating a new tweet, a user should be able to view it in the timeline immediately without refetching the timeline from the network.
-- [x] Retweeting and favoriting should increment the retweet and favorite count. **--Yingying: works well on details page, but wasn't able to get row number on cells in tweet list page**'
-- [x] User should be able to unretweet and unfavorite and should decrement the retweet and favorite count. **--Yingying: only did unfavorite**
-- [ ] Replies should be prefixed with the username and the reply_id should be set when posting the tweet,
-- [x] User can load more tweets once they reach the bottom of the feed using infinite loading similar to the actual Twitter client. **--Yingying: half-baked.. keep hitting rate limit with this**
+- [ ] Profile Page
+- [ ] Implement the paging view for the user description.
+- [ ] As the paging view moves, increase the opacity of the background screen. See the actual Twitter app for this effect
+- [ ] Pulling down the profile page should blur and resize the header image.
+- [ ] Account switching
+- [ ] Long press on tab bar to bring up Account view with animation
+- [ ] Tap account to switch to
+- [ ] Include a plus button to Add an Account
+- [ ] Swipe to delete an account
+
 
 The following **additional** features are implemented:
 
-- [x] Display "Name Retweeted" on top of the tweet content in home timeline just like the way Twitter does.
+- [ ] List anything else that you can get done to improve the app functionality!
 
 Please list two areas of the assignment you'd like to **discuss further with your peers** during the next class (examples include better ways to implement something, how to extend your app in certain ways, etc):
 
-1. App permission seems weird. I made it "read and write" in the beginning and it didn't let me post new tweet. After changed to Read, write and access direct message, then I can. I think this may be due to not logout or clean Simulator sessions.sss
-2. There's no reply_count in tweet JSON that we retrieve back, but it exists in the Tweet Object on the Twitter dev site.
-3. I had a hard time getting the row number out of clicked cell.
-4. I got a 404 for retweet func, I checked all places and not sure why it was not working. I think it should be very similar to how the favorite func was written.
+1.
+2.
+
 
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
 
-<img src='https://raw.githubusercontent.com/yzhanghearsay/03_Tweeter/master/03%20Tweeter/tweeter.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
-<img src='https://raw.githubusercontent.com/yzhanghearsay/03_Tweeter/master/03%20Tweeter/tweeter-additional.png' title='screenshot' height='686' alt='screenshot'>
+<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
