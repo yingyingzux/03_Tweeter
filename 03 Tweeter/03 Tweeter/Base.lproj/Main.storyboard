@@ -27,16 +27,16 @@
                                 <color key="backgroundColor" red="0.1647058824" green="0.63529411759999999" blue="0.93725490199999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="sectionIndexBackgroundColor" red="0.1647058824" green="0.63529411759999999" blue="0.93725490199999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MenuCell" rowHeight="136" id="yQi-Q6-DYV" customClass="MenuCell" customModule="_3_Tweeter" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="136"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MenuCell" rowHeight="80" id="yQi-Q6-DYV" customClass="MenuCell" customModule="_3_Tweeter" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="yQi-Q6-DYV" id="KdY-xJ-PbX">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="136"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w2l-4k-tOw">
-                                                    <rect key="frame" x="20" y="59" width="317" height="48"/>
-                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="30"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w2l-4k-tOw">
+                                                    <rect key="frame" x="20" y="27" width="48" height="24"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="20"/>
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -189,7 +189,7 @@
                                                         <constraint firstAttribute="height" constant="60" id="xrM-Df-d40"/>
                                                     </constraints>
                                                     <connections>
-                                                        <outletCollection property="gestureRecognizers" destination="Niw-Gp-Y19" appends="YES" id="GFm-bG-YgK"/>
+                                                        <outletCollection property="gestureRecognizers" destination="aS3-ka-9HF" appends="YES" id="bep-jb-Xtj"/>
                                                     </connections>
                                                 </imageView>
                                                 <imageView userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="retweet" translatesAutoresizingMaskIntoConstraints="NO" id="Fie-om-uOI">
@@ -337,10 +337,10 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Upq-tO-ELg" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="Niw-Gp-Y19" userLabel="Home Timeline Tap Gesture Recognizer">
+                <tapGestureRecognizer id="aS3-ka-9HF">
                     <connections>
-                        <action selector="onTapHomeTimelineProfileImage:" destination="Y1H-if-QuV" id="ICe-AZ-lpm"/>
-                        <segue destination="1Vv-am-SS4" kind="show" identifier="homeTimelineToProfileSegue" id="gsf-kZ-Tes"/>
+                        <action selector="onTapProfileImage:" destination="Y1H-if-QuV" id="lW8-27-MBs"/>
+                        <segue destination="OBC-4p-Yhi" kind="show" identifier="homeTimelineToProfileSegue" id="Hnv-hJ-0jK"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
@@ -1144,6 +1144,5 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="ATc-ja-NOA"/>
-        <segue reference="gsf-kZ-Tes"/>
     </inferredMetricsTieBreakers>
 </document>

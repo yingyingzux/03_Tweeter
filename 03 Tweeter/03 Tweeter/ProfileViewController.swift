@@ -30,8 +30,9 @@ class ProfileViewController: UIViewController, UITableViewDataSource, UITableVie
 
         print("ProfileViewController loaded")
         
-        let user = User.currentUser
-        
+        if user == nil {
+            let user = User.currentUser
+        }
         
         if user!.profileUrl != nil {
             profileAvartarImageView.setImageWith((user?.profileUrl!)!)

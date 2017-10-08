@@ -13,6 +13,7 @@ class TweetsViewController: UIViewController,  UITableViewDelegate, UITableViewD
     
     var tweets: [Tweet]!
     var newTweet: Tweet!
+    var user: User!
     
     var isFaved: [Bool] = [false]
     
@@ -127,9 +128,10 @@ class TweetsViewController: UIViewController,  UITableViewDelegate, UITableViewD
         
         cell.TweetTextLabel.text = tweet?.text
         
-        cell.tapRecognizer.addTarget(self, action: "onTapHomeTimelineProfileImage:")
+        cell.tapRecognizer.addTarget(self, action: Selector("onTapProfileImage:"))
         cell.profileImageView.gestureRecognizers = []
         cell.profileImageView.gestureRecognizers!.append(cell.tapRecognizer)
+        cell.profileImageView.tag = indexPath.row
         
         cell.selectionStyle = .none // get rid of gray selection
         
@@ -152,23 +154,6 @@ class TweetsViewController: UIViewController,  UITableViewDelegate, UITableViewD
         }, failure: { (error: Error) in
             print(error.localizedDescription)
         })
-    }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "HomeTimelineToNewTweetSegue" {
-            let navigationController = segue.destination as! UINavigationController
-            let newTweetViewController = navigationController.topViewController as! NewTweetViewController
-            
-            //newTweetViewController.DataManager = DataManager()
-        }
-        else if segue.identifier == "HomeTimelineToDetailsSegue" {
-            let detailsViewController = segue.destination as! DetailsViewController
-            
-            let tableCell = sender as! UITableViewCell
-            let indexPath = tableView.indexPath(for: tableCell)
-            let tweet = tweets![indexPath!.row]
-            detailsViewController.tweet = tweet
-        }
     }
     
     @IBAction func onLogoutButton(_ sender: Any) {
@@ -215,36 +200,66 @@ class TweetsViewController: UIViewController,  UITableViewDelegate, UITableViewD
             }, failure: { (error: Error) in
                 print(error)
             })
-
          }
-
-
-    }
-    
-    
-    @IBAction func onTapHomeTimelineProfileImage(_ sender: Any) {
-        
-        TwitterClient.sharedInstance?.userTimeline(id: idForProfile, success: { (tweet: [Tweet]) in
-            
-            //print("onTap home timeline image recognized")
-            
-            self.performSegue(withIdentifier: "homeTimelineToProfileSegue", sender: nil)
-            
-        }, failure: { (error: Error) in
-            
-            print("error: \(error.localizedDescription)")
-            
-        })
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "homeTimelineToProfileSegue" {
+        if segue.identifier == "HomeTimelineToNewTweetSegue" {
+            let navigationController = segue.destination as! UINavigationController
+            let newTweetViewController = navigationController.topViewController as! NewTweetViewController
+            
+            //newTweetViewController.DataManager = DataManager()
+        }
+        else if segue.identifier == "HomeTimelineToDetailsSegue" {
+            let detailsViewController = segue.destination as! DetailsViewController
+            
+            let tableCell = sender as! UITableViewCell
+            let indexPath = tableView.indexPath(for: tableCell)
+            let tweet = tweets![indexPath!.row]
+            detailsViewController.tweet = tweet
+        }
+        else if segue.identifier == "homeTimelineToProfileSegue" {
             let navigationController = segue.destination as! UINavigationController
             let profileViewController = navigationController.topViewController as! ProfileViewController
-            //profileViewController.user = theEvent.myEvent
             
+            //let tweet = tweets![indexPath!.row]
+            let indexPath = sender as! Int
+            
+            let tweet = tweets![indexPath]
+            
+            if tweet.retweetedStatusDictionary != nil { // retweetStatusDictionary exits
+                //profileViewController.user = tweet.retweetedUserDictionary as User
+                idForProfile = tweet.idRetweetOriginal
+            } else {
+                idForProfile = tweet.id
+            }
+            
+            let user = TwitterClient.sharedInstance?.getUser(id: idForProfile, success: { (user: User) in
+                profileViewController.user = user
+            }, failure: { (error: Error) in
+                print(error.localizedDescription)
+            })
             
         }
+        
+    }
+    
+    @IBAction func onTapProfileImage(_ sender: UITapGestureRecognizer) {
+        
+         var view: UIView!
+         var loc: CGPoint!
+         
+         view = sender.view
+         loc = sender.location(in: view)
+         
+         var indexPath: Int!
+         
+         indexPath = view.hitTest(loc, with: nil)?.tag
+         
+         //print("indexPath: \(indexPath)")
+        
+         self.performSegue(withIdentifier: "homeTimelineToProfileSegue", sender: indexPath)
+
     }
     
     
