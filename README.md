@@ -36,7 +36,7 @@ The following **additional** features are implemented:
 Please list two areas of the assignment you'd like to **discuss further with your peers** during the next class (examples include better ways to implement something, how to extend your app in certain ways, etc):
 
 1. iOS Simulator suddenly didn't take any clicks. Had to restart XCode several times, clean projects and force quit Xcode again. Finally worked but I had no idea how I fixed it..
-2. XCode treats auto layout in a weird way. Adding any constraint made that view stick to top left. I haven't found a solution.
+2. XCode treats auto layout in a weird way. Adding any constraint made that view stick to top left. I solved it this time by removing the cell completely and adding all views from scratch.
 3.'
 
 

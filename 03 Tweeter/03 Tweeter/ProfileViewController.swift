@@ -110,6 +110,7 @@ class ProfileViewController: UIViewController, UITableViewDataSource, UITableVie
             cell.profileCellProfileImageView.image = UIImage(named:"bizimage-small.png")
         }
         
+        
         cell.profileCellNameLabel.text = tweet?.tweetAuthorName
         cell.profileCellUsernameLabel.text = "@\(tweet?.tweetHandle ?? "")"
         cell.profileCellTimestampLabel.text = "\((tweet?.timestamp)!)"
