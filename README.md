@@ -8,12 +8,12 @@ The following **required** functionality is completed:
 
 - [x] Hamburger menu
 - [x] Dragging anywhere in the view should reveal the menu.
-- [ ] The menu should include links to your profile, the home timeline, and the mentions view.
-- [ ] The menu can look similar to the example or feel free to take liberty with the UI.
-- [ ] Profile page
-- [ ] Contains the user header view
-- [ ] Contains a section with the users basic stats: # tweets, # following, # followers
-- [ ] Home Timeline
+- [x] The menu should include links to your profile, the home timeline, and the mentions view.
+- [x] The menu can look similar to the example or feel free to take liberty with the UI.
+- [x] Profile page
+- [x] Contains the user header view
+- [x] Contains a section with the users basic stats: # tweets, # following, # followers
+- [x] Home Timeline
 - [ ] Tapping on a user image should bring up that user's profile page
 
 The following **optional** features are implemented:
@@ -35,8 +35,9 @@ The following **additional** features are implemented:
 
 Please list two areas of the assignment you'd like to **discuss further with your peers** during the next class (examples include better ways to implement something, how to extend your app in certain ways, etc):
 
-1.
-2.
+1. iOS Simulator suddenly didn't take any clicks. Had to restart XCode several times, clean projects and force quit Xcode again. Finally worked but I had no idea how I fixed it..
+2. XCode treats auto layout in a weird way. Adding any constraint made that view stick to top left. I haven't found a solution.
+3.'
 
 
 ## Video Walkthrough

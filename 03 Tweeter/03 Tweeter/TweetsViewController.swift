@@ -25,7 +25,7 @@ class TweetsViewController: UIViewController,  UITableViewDelegate, UITableViewD
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        print("TwitterViewController view loaded")
+        print("TwitterViewController loaded")
         //NotificationCenter.default.addObserver(self, selector: #selector(loadList), name: NSNotification.Name(rawValue: "load"), object: newTweet)
         
         tableView.dataSource = self

@@ -8,12 +8,80 @@
 
 import UIKit
 
-class ProfileViewController: UIViewController {
+class ProfileViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
+    var user: User!
+    var tweets: [Tweet]!
+    
+    @IBOutlet weak var tableView: UITableView!
+    
+    @IBOutlet weak var backgroundImageView: UIImageView!
+    @IBOutlet weak var profileAvartarImageView: UIImageView!
+    @IBOutlet weak var profileNameLabel: UILabel!
+    @IBOutlet weak var profileUsernameLabel: UILabel!
+    @IBOutlet weak var profileDescriptionLabel: UILabel!
+    @IBOutlet weak var profileLocationLabel: UILabel!
+    @IBOutlet weak var profileTweetCount: UILabel!
+    @IBOutlet weak var profileFollowingCount: UILabel!
+    @IBOutlet weak var profileFollowersCount: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        print("ProfileViewController loaded")
+        
+        let user = User.currentUser
+        
+        if user!.profileUrl != nil {
+            profileAvartarImageView.setImageWith((user?.profileUrl!)!)
+        } else {
+            profileAvartarImageView.image = UIImage(named:"bizimage-small.png")
+        }
+        
+        if user!.profileBackgroundUrl != nil {
+            backgroundImageView.setImageWith((user?.profileBackgroundUrl!)!)
+        } else {
+            backgroundImageView.tintColor = UIColor(red:0.00, green:0.64, blue:0.93, alpha:1.0)
+            //backgroundImageView.image = UIImage(named:"bizimage-small.png")
+        }
+        
+        if user!.tagline != nil {
+            profileDescriptionLabel.text = user?.tagline
+        } else {
+            profileDescriptionLabel.text = "No description"
+        }
+        
+        if user!.location != nil {
+            profileLocationLabel.text = user?.location
+        } else {
+            profileLocationLabel.text = "No loation info"
+        }
+        
+        profileNameLabel.text = user!.name
+        profileUsernameLabel.text = "@\(user!.screenname ?? "missing_handle")"
+        
+        profileTweetCount.text = "\(user!.tweetCount ?? 0)"
+        profileFollowingCount.text = "\(user!.followingCount ?? 0)"
+        profileFollowersCount.text = "\(user!.followersCount ?? 0)"
+
+        tableView.dataSource = self
+        tableView.delegate = self
+        tableView.rowHeight = UITableViewAutomaticDimension
+        tableView.estimatedRowHeight = 120
+        
+        TwitterClient.sharedInstance?.userTimeline(success: { (tweets: [Tweet]) in
+        print("Twitter user timeline triggered")
+        
+        self.tweets = tweets
+        
+        self.tableView.reloadData()
+        
+        }, failure: { (error: Error) in
+        print(error.localizedDescription)
+        })
+        
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -21,15 +89,40 @@ class ProfileViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
+        if tweets != nil {
+            return tweets!.count
+        } else {
+            return 0
+        }
     }
-    */
-
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ProfileCell", for: indexPath) as! ProfileCell
+        
+        let tweet = tweets?[indexPath.row]
+    
+        if tweet?.profileImageViewUrl != nil {
+            cell.profileCellProfileImageView.setImageWith((tweet?.profileImageViewUrl!)!)
+        } else {
+            cell.profileCellProfileImageView.image = UIImage(named:"bizimage-small.png")
+        }
+        
+        cell.profileCellNameLabel.text = tweet?.tweetAuthorName
+        cell.profileCellUsernameLabel.text = "@\(tweet?.tweetHandle ?? "")"
+        cell.profileCellTimestampLabel.text = "\((tweet?.timestamp)!)"
+        
+        cell.profileCellRetweetCount.text = "\(tweet?.retweetCount ?? 0)"
+        
+        cell.profileCellFavCount.text = "\(tweet?.favoritesCount ?? 0)"
+        
+        cell.profileCellTweetTextLabel.text = tweet?.text
+        
+        cell.selectionStyle = .none // get rid of gray selection
+        
+        return cell
+    }
+    
 }

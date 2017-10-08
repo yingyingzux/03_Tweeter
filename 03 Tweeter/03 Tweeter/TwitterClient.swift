@@ -99,6 +99,48 @@ class TwitterClient: BDBOAuth1SessionManager {
         })
     }
     
+    func mentionsTimeline(success: @escaping ([Tweet]) -> (), failure: @escaping (Error) -> ()) {
+        TwitterClient.sharedInstance?.get("1.1/statuses/mentions_timeline.json", parameters: nil, progress: nil, success: { (task: URLSessionDataTask, response: Any?) -> Void in
+            
+            print("get mentions timeline")
+            
+            let dictionaries = response as! [NSDictionary]
+            let tweets = Tweet.tweetsWithArray(dictionaries: dictionaries)
+            
+            /*
+             for tweet in tweets {
+             print ("mentions tweet: \(dictionaries)")
+             }
+            */
+            
+            success(tweets)
+            
+        }, failure: { (task: URLSessionDataTask?, error: Error) -> Void in
+            failure(error)
+        })
+    }
+    
+    func userTimeline(success: @escaping ([Tweet]) -> (), failure: @escaping (Error) -> ()) {
+        TwitterClient.sharedInstance?.get("1.1/statuses/user_timeline.json", parameters: nil, progress: nil, success: { (task: URLSessionDataTask, response: Any?) -> Void in
+            
+            print("get user timeline")
+            
+            let dictionaries = response as! [NSDictionary]
+            let tweets = Tweet.tweetsWithArray(dictionaries: dictionaries)
+            
+            /*
+             for tweet in tweets {
+             print ("mentions tweet: \(dictionaries)")
+             }
+             */
+            
+            success(tweets)
+            
+        }, failure: { (task: URLSessionDataTask?, error: Error) -> Void in
+            failure(error)
+        })
+    }
+    
     func postNewTweet(text: String, success: @escaping (Tweet) -> (), failure: @escaping (Error) -> ()) {
         let params = ["status": text]
         TwitterClient.sharedInstance?.post("/1.1/statuses/update.json", parameters: params, progress: nil, success: { (task: URLSessionDataTask, response: Any?) -> Void in
