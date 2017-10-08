@@ -13,6 +13,8 @@ class TweetCell: UITableViewCell {
     
     @IBOutlet weak var profileImageView: UIImageView!
     
+    internal let tapRecognizer: UITapGestureRecognizer = UITapGestureRecognizer()
+    
     @IBOutlet weak var retweetAuthorIndicatorImageView: UIImageView!
     
     @IBOutlet weak var retweetAuthorNameLabel: UILabel!

@@ -181,12 +181,16 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="158"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ILA-J8-LDE">
+                                                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ILA-J8-LDE">
                                                     <rect key="frame" x="12" y="28" width="60" height="60"/>
+                                                    <gestureRecognizers/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="60" id="pf6-OO-N3P"/>
                                                         <constraint firstAttribute="height" constant="60" id="xrM-Df-d40"/>
                                                     </constraints>
+                                                    <connections>
+                                                        <outletCollection property="gestureRecognizers" destination="Niw-Gp-Y19" appends="YES" id="GFm-bG-YgK"/>
+                                                    </connections>
                                                 </imageView>
                                                 <imageView userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="retweet" translatesAutoresizingMaskIntoConstraints="NO" id="Fie-om-uOI">
                                                     <rect key="frame" x="54" y="8" width="18" height="12"/>
@@ -333,6 +337,12 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Upq-tO-ELg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Niw-Gp-Y19" userLabel="Home Timeline Tap Gesture Recognizer">
+                    <connections>
+                        <action selector="onTapHomeTimelineProfileImage:" destination="Y1H-if-QuV" id="ICe-AZ-lpm"/>
+                        <segue destination="1Vv-am-SS4" kind="show" identifier="homeTimelineToProfileSegue" id="gsf-kZ-Tes"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="2060" y="137.18140929535232"/>
         </scene>
@@ -640,7 +650,7 @@
                                         <rect key="frame" x="0.0" y="350" width="375" height="179"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="5g4-zK-ad7" id="MVK-TL-hXl">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="178.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="179"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="g7K-Dh-4CZ">
@@ -668,8 +678,8 @@
                                                     <color key="textColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You retweeted" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VRy-Yw-l7L">
-                                                    <rect key="frame" x="84" y="9" width="99" height="18"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Joe Smith" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VRy-Yw-l7L">
+                                                    <rect key="frame" x="84" y="9" width="69" height="18"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <color key="textColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -743,7 +753,16 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="profileCellFavCount" destination="lc7-4l-hOp" id="aOl-kU-dUb"/>
+                                            <outlet property="profileCellNameLabel" destination="rML-2z-glL" id="S94-v8-rPK"/>
                                             <outlet property="profileCellProfileImageView" destination="g7K-Dh-4CZ" id="WEN-4f-mnW"/>
+                                            <outlet property="profileCellRetweetAuthorImageView" destination="gS6-7g-GzI" id="Bpa-1r-f5x"/>
+                                            <outlet property="profileCellRetweetAuthorImageViewTopContraint" destination="Cy6-vf-7bE" id="Arn-yG-cgC"/>
+                                            <outlet property="profileCellRetweetAuthorNameLabel" destination="VRy-Yw-l7L" id="SAR-HB-Xva"/>
+                                            <outlet property="profileCellRetweetCount" destination="JbG-eW-eN3" id="yNd-Qh-3Bm"/>
+                                            <outlet property="profileCellTimestampLabel" destination="ORz-k8-fS9" id="G3F-sd-oZv"/>
+                                            <outlet property="profileCellTweetTextLabel" destination="MYp-B7-Oii" id="nN1-c2-sbb"/>
+                                            <outlet property="profileCellUsernameLabel" destination="pnS-W3-eNP" id="6ga-Lx-tgj"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -1125,5 +1144,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="ATc-ja-NOA"/>
+        <segue reference="gsf-kZ-Tes"/>
     </inferredMetricsTieBreakers>
 </document>

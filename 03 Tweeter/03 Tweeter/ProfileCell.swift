@@ -13,6 +13,12 @@ class ProfileCell: UITableViewCell {
     
     @IBOutlet weak var profileCellProfileImageView: UIImageView!
     
+    @IBOutlet weak var profileCellRetweetAuthorImageViewTopContraint: NSLayoutConstraint!
+    
+    @IBOutlet weak var profileCellRetweetAuthorImageView: UIImageView!
+    
+    @IBOutlet weak var profileCellRetweetAuthorNameLabel: UILabel!
+    
     @IBOutlet weak var profileCellNameLabel: UILabel!
     @IBOutlet weak var profileCellUsernameLabel: UILabel!
     @IBOutlet weak var profileCellTweetTextLabel: UILabel!

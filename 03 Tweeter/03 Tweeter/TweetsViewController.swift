@@ -15,7 +15,8 @@ class TweetsViewController: UIViewController,  UITableViewDelegate, UITableViewD
     var newTweet: Tweet!
     
     var isFaved: [Bool] = [false]
-
+    
+    public var idForProfile: Int = 0
     
     @IBOutlet weak var tableView: UITableView!
     
@@ -101,12 +102,14 @@ class TweetsViewController: UIViewController,  UITableViewDelegate, UITableViewD
         if tweet?.retweetAuthorName != nil {
             cell.retweetAuthorIndicatorImageView.isHidden = false
             cell.retweetAuthorNameLabel.isHidden = false
+            idForProfile = (tweet?.userIdRetweetOriginal)!
             
+            //print("tweet id: \(idForProfile)")
             cell.retweetAuthorNameLabel.text = "\((tweet?.retweetAuthorName)!) Retweeted"
         } else {
             //need to adjust height & gap
             //let screenSize: CGRect = UIScreen.main.bounds
-            
+            idForProfile = (tweet?.userId)!
             cell.retweetAuthorIndicatorImageView.isHidden = true
             cell.retweetAuthorNameLabel.isHidden = true
         }
@@ -123,6 +126,10 @@ class TweetsViewController: UIViewController,  UITableViewDelegate, UITableViewD
         cell.favCountLabel.text = "\(tweet?.favoritesCount ?? 0)"
         
         cell.TweetTextLabel.text = tweet?.text
+        
+        cell.tapRecognizer.addTarget(self, action: "onTapHomeTimelineProfileImage:")
+        cell.profileImageView.gestureRecognizers = []
+        cell.profileImageView.gestureRecognizers!.append(cell.tapRecognizer)
         
         cell.selectionStyle = .none // get rid of gray selection
         
@@ -212,6 +219,32 @@ class TweetsViewController: UIViewController,  UITableViewDelegate, UITableViewD
          }
 
 
+    }
+    
+    
+    @IBAction func onTapHomeTimelineProfileImage(_ sender: Any) {
+        
+        TwitterClient.sharedInstance?.userTimeline(id: idForProfile, success: { (tweet: [Tweet]) in
+            
+            //print("onTap home timeline image recognized")
+            
+            self.performSegue(withIdentifier: "homeTimelineToProfileSegue", sender: nil)
+            
+        }, failure: { (error: Error) in
+            
+            print("error: \(error.localizedDescription)")
+            
+        })
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "homeTimelineToProfileSegue" {
+            let navigationController = segue.destination as! UINavigationController
+            let profileViewController = navigationController.topViewController as! ProfileViewController
+            //profileViewController.user = theEvent.myEvent
+            
+            
+        }
     }
     
     

@@ -32,6 +32,7 @@ class ProfileViewController: UIViewController, UITableViewDataSource, UITableVie
         
         let user = User.currentUser
         
+        
         if user!.profileUrl != nil {
             profileAvartarImageView.setImageWith((user?.profileUrl!)!)
         } else {
@@ -69,7 +70,8 @@ class ProfileViewController: UIViewController, UITableViewDataSource, UITableVie
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.estimatedRowHeight = 120
         
-        TwitterClient.sharedInstance?.userTimeline(success: { (tweets: [Tweet]) in
+        TwitterClient.sharedInstance?.userTimeline(id: (user?.id)!, success: { (tweets: [Tweet]) in
+        
         print("Twitter user timeline triggered")
         
         self.tweets = tweets
@@ -110,6 +112,19 @@ class ProfileViewController: UIViewController, UITableViewDataSource, UITableVie
             cell.profileCellProfileImageView.image = UIImage(named:"bizimage-small.png")
         }
         
+        if tweet?.retweetAuthorName != nil {
+            cell.profileCellRetweetAuthorImageViewTopContraint.constant = 12
+            cell.profileCellRetweetAuthorImageView.isHidden = false
+            cell.profileCellRetweetAuthorNameLabel.isHidden = false
+            
+            cell.profileCellRetweetAuthorNameLabel.text = "\((tweet?.retweetAuthorName)!) Retweeted"
+        } else {
+            //need to adjust height & gap
+            //let screenSize: CGRect = UIScreen.main.bounds
+            cell.profileCellRetweetAuthorImageViewTopContraint.constant = 0
+            cell.profileCellRetweetAuthorImageView.isHidden = true
+            cell.profileCellRetweetAuthorNameLabel.isHidden = true
+        }
         
         cell.profileCellNameLabel.text = tweet?.tweetAuthorName
         cell.profileCellUsernameLabel.text = "@\(tweet?.tweetHandle ?? "")"

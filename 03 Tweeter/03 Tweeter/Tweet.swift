@@ -21,6 +21,9 @@ class Tweet: NSObject {
     var id: Int = 0
     var idRetweetOriginal: Int = 0
     
+    var userId: Int = 0
+    var userIdRetweetOriginal: Int = 0
+    
     var retweetedStatusDictionary: NSDictionary?
     var retweetedUserDictionary: NSDictionary?
     
@@ -31,7 +34,7 @@ class Tweet: NSObject {
         userDictionary = dictionary["user"] as? NSDictionary
         retweetedStatusDictionary = dictionary["retweeted_status"] as? NSDictionary
         
-        id = dictionary["id"] as! Int
+        //id = dictionary["id"] as! Int // tweet id
         
         retweetCount = (dictionary["retweet_count"] as? Int) ?? 0
         favoritesCount = (dictionary["favorite_count"] as? Int) ?? 0
@@ -39,9 +42,10 @@ class Tweet: NSObject {
         if retweetedStatusDictionary != nil { // retweetStatusDictionary exits
             retweetedUserDictionary = retweetedStatusDictionary?["user"] as? NSDictionary
             retweetAuthorName = userDictionary?["name"] as? String
-            idRetweetOriginal = retweetedStatusDictionary?["id"] as! Int
+            //idRetweetOriginal = retweetedStatusDictionary?["id"] as! Int // tweet id
             
-            //print("retweetAuthorName - aka userDictionary-name: \(retweetAuthorName)")
+            userIdRetweetOriginal = (retweetedUserDictionary?["id"] as? Int)!
+            //print("retweetedUserDictionary: \(retweetedUserDictionary)")
             
             let profileImageViewUrlString = retweetedUserDictionary?["profile_image_url_https"] as? String
             
@@ -80,6 +84,7 @@ class Tweet: NSObject {
             
             tweetAuthorName = userDictionary?["name"] as? String
             tweetHandle = userDictionary?["screen_name"] as? String
+            userId = (userDictionary?["id"] as? Int)!
             
             let timestampString = dictionary["created_at"] as? String
             
@@ -91,6 +96,9 @@ class Tweet: NSObject {
 
             
             text = dictionary["text"] as? String
+            
+            //print("userDictionary: \(userDictionary)")
+
         }
         
         

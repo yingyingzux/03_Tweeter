@@ -120,8 +120,10 @@ class TwitterClient: BDBOAuth1SessionManager {
         })
     }
     
-    func userTimeline(success: @escaping ([Tweet]) -> (), failure: @escaping (Error) -> ()) {
-        TwitterClient.sharedInstance?.get("1.1/statuses/user_timeline.json", parameters: nil, progress: nil, success: { (task: URLSessionDataTask, response: Any?) -> Void in
+    func userTimeline(id: Int, success: @escaping ([Tweet]) -> (), failure: @escaping (Error) -> ()) {
+        let params = ["id": id]
+        
+        TwitterClient.sharedInstance?.get("1.1/statuses/user_timeline.json", parameters: params, progress: nil, success: { (task: URLSessionDataTask, response: Any?) -> Void in
             
             print("get user timeline")
             

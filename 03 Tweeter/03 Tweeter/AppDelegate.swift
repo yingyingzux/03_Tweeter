@@ -44,6 +44,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             
             menuViewController.hamburgerViewController = hamburgerViewController
             
+            // how to make hamburger disppear automatically
+            
         } else {
             print("There is no current user")
         }
