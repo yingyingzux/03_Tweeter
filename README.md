@@ -1,6 +1,6 @@
 # Project 4 - *Tweeter*
 
-Time spent: **X** hours spent in total
+Time spent: **17** hours spent in total
 
 ## User Stories
 
@@ -25,7 +25,7 @@ The following **optional** features are implemented:
 - [ ] Account switching
 - [ ] Long press on tab bar to bring up Account view with animation
 - [ ] Tap account to switch to
-- [ ] Include a plus button to Add an Account
+- [x] Include a plus button to Add an Account **Yingying: half baked.. can display login screen but not able to add a new account"
 - [ ] Swipe to delete an account
 
 
@@ -38,14 +38,14 @@ Please list two areas of the assignment you'd like to **discuss further with you
 1. iOS Simulator suddenly didn't take any clicks. Had to restart XCode several times, clean projects and force quit Xcode again. Finally worked but I had no idea how I fixed it..
 2. XCode treats auto layout in a weird way. Adding any constraint made that view stick to top left. I solved it this time by removing the cell completely and adding all views from scratch.
 3. If I want to click on an image to perform segue, I need to add a tap gesture recognizer. Because there are many table view cells, I need an array of tap recognizers to capture the tap action. Image user interaction needs to be enabled.
-4. 
+4. Spent quite a long time trying to figure how to pass User object from Home Timeline to Profile page, and realized I can get user info from tweets.
 
 
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://github.com/yzhanghearsay/03_Tweeter/blob/master/03%20Tweeter/tweeter-redux.gif?raw=true' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
