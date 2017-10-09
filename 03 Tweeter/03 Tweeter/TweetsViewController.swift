@@ -17,7 +17,7 @@ class TweetsViewController: UIViewController,  UITableViewDelegate, UITableViewD
     
     var isFaved: [Bool] = [false]
     
-    public var idForProfile: Int = 0
+    var idForProfile: Int = 0
     
     @IBOutlet weak var tableView: UITableView!
     
@@ -219,9 +219,13 @@ class TweetsViewController: UIViewController,  UITableViewDelegate, UITableViewD
             detailsViewController.tweet = tweet
         }
         else if segue.identifier == "homeTimelineToProfileSegue" {
+            let profileViewController = segue.destination as! ProfileViewController
+            
+            /*
             let navigationController = segue.destination as! UINavigationController
             let profileViewController = navigationController.topViewController as! ProfileViewController
-            
+            */
+ 
             //let tweet = tweets![indexPath!.row]
             let indexPath = sender as! Int
             
@@ -229,16 +233,12 @@ class TweetsViewController: UIViewController,  UITableViewDelegate, UITableViewD
             
             if tweet.retweetedStatusDictionary != nil { // retweetStatusDictionary exits
                 //profileViewController.user = tweet.retweetedUserDictionary as User
-                idForProfile = tweet.idRetweetOriginal
+                idForProfile = tweet.userIdRetweetOriginal
             } else {
-                idForProfile = tweet.id
+                idForProfile = tweet.userId
             }
             
-            let user = TwitterClient.sharedInstance?.getUser(id: idForProfile, success: { (user: User) in
-                profileViewController.user = user
-            }, failure: { (error: Error) in
-                print(error.localizedDescription)
-            })
+            profileViewController.idForProfile = self.idForProfile
             
         }
         

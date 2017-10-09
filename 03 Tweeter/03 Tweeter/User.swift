@@ -91,4 +91,16 @@ class User: NSObject {
 
         }
     }
+    
+    class func usersWithArray(dictionaries: [NSDictionary]) -> [User] {
+        var users = [User]()
+        
+        for dictionary in dictionaries {
+            let user = User(dictionary: dictionary)
+            users.append(user)
+            
+        }
+        
+        return users
+    }
 }

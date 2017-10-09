@@ -12,17 +12,33 @@ class HamburgerViewController: UIViewController {
 
     @IBOutlet weak var menuView: UIView!
     
+    @IBOutlet weak var accountView: UIView!
+    
     @IBOutlet weak var contentView: UIView!
     
     @IBOutlet weak var leftMarginConstraint: NSLayoutConstraint!
     
-    var originalLeftMargin: CGFloat!
+    @IBOutlet weak var accountTopMarginConstraint: NSLayoutConstraint!
+    
+    var originalLeftMargin: CGFloat!  // for menu view
+    
+    var originalTopMargin: CGFloat!   // for account view
+    
+    @IBOutlet var lpgr: UILongPressGestureRecognizer!
     
     var menuViewController: UIViewController! {
         didSet {
             view.layoutIfNeeded()
             
             menuView.addSubview(menuViewController.view)
+        }
+    }
+    
+    var accountViewController: UIViewController! {
+        didSet {
+            view.layoutIfNeeded()
+            
+            accountView.addSubview(accountViewController.view)
         }
     }
     
@@ -37,6 +53,14 @@ class HamburgerViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        /*
+        lpgr = UILongPressGestureRecognizer(target: self, action: #selector (self.onLongPressGesture(_:)))
+        lpgr.minimumPressDuration = 0.3
+        contentView.navi.addGestureRecognizer(lpgr)
+        
+        //let lpgr = UILongPressGestureRecognizer(target: self, action: "onLongPressGesture:")
+        */
+        
         // Do any additional setup after loading the view.
     }
 
@@ -65,18 +89,30 @@ class HamburgerViewController: UIViewController {
             UIView.animate(withDuration: 0.3, animations: {
                 
                 if velocity.x > 0 {
-                    self.leftMarginConstraint.constant = self.view.frame.size.width - 180
+                    self.leftMarginConstraint.constant = self.view.frame.size.width - 140
                 } else {
                     self.leftMarginConstraint.constant = 0
                 }
                 
                 self.view.layoutIfNeeded()
             })
-            
-            
         }
-    
     }
     
-
+    
+    @IBAction func onLongPressGesture(_ sender: UILongPressGestureRecognizer) {
+        
+        if sender.state == UIGestureRecognizerState.began {
+            
+            
+            
+        } else if sender.state == UIGestureRecognizerState.changed {
+            
+            
+            
+        } else if sender.state == UIGestureRecognizerState.ended {
+            
+        }
+    }
+    
 }

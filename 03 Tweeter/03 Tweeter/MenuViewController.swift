@@ -10,7 +10,13 @@ import UIKit
 
 class MenuViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
+    var user: User!
+    
     @IBOutlet weak var tableView: UITableView!
+    
+    @IBOutlet weak var profileImageView: UIImageView!
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var screenNameLabel: UILabel!
     
     private var profileNavigationController: UIViewController!
     private var tweetsNavigationController: UIViewController!
@@ -23,7 +29,19 @@ class MenuViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        user = User.currentUser
+        
+        if user!.profileUrl != nil {
+            profileImageView.setImageWith((user?.profileUrl!)!)
+        } else {
+            profileImageView.image = UIImage(named:"bizimage-small.png")
+        }
+        
+        nameLabel.text = user!.name
+        screenNameLabel.text = "@\(user!.screenname ?? "missing_handle")"
+        
+        
         tableView.dataSource = self
         tableView.delegate = self
         

@@ -120,21 +120,6 @@ class TwitterClient: BDBOAuth1SessionManager {
         })
     }
     
-    func getUser(id: Int, success: @escaping (User) -> (), failure: @escaping (Error) -> ()) {
-        let params = ["id": id]
-        
-        TwitterClient.sharedInstance?.get("1.1/users/lookup.json", parameters: nil, progress: nil, success: { (task: URLSessionDataTask, response: Any?) -> Void in
-            
-            let userDictionary = response as! NSDictionary
-            let user = User(dictionary: userDictionary)
-            
-            success(user)
-            
-        }, failure: { (task: URLSessionDataTask?, error: Error) -> Void in
-            failure(error)
-        })
-    }
-    
     func userTimeline(id: Int, success: @escaping ([Tweet]) -> (), failure: @escaping (Error) -> ()) {
         let params = ["id": id]
         

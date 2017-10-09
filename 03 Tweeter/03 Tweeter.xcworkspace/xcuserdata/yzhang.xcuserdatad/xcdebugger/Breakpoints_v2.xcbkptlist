@@ -6,16 +6,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "03 Tweeter/ProfileViewController.swift"
-            timestampString = "529191385.274489"
+            timestampString = "529201237.091537"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "36"
-            endingLineNumber = "36"
-            landmarkName = "viewDidLoad()"
+            startingLineNumber = "176"
+            endingLineNumber = "176"
+            landmarkName = "getTweetUserInfo(tweets:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
