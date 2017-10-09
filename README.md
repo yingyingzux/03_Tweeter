@@ -38,7 +38,7 @@ Please list two areas of the assignment you'd like to **discuss further with you
 1. iOS Simulator suddenly didn't take any clicks. Had to restart XCode several times, clean projects and force quit Xcode again. Finally worked but I had no idea how I fixed it..
 2. XCode treats auto layout in a weird way. Adding any constraint made that view stick to top left. I solved it this time by removing the cell completely and adding all views from scratch.
 3. If I want to click on an image to perform segue, I need to add a tap gesture recognizer. Because there are many table view cells, I need an array of tap recognizers to capture the tap action. Image user interaction needs to be enabled.
-4. Spent quite a long time trying to figure how to pass User object from Home Timeline to Profile page, and realized I can get user info from tweets.
+4. Spent quite a long time trying to figure how to pass User object from Home Timeline to Profile page, and realized I can get user info from tweets. But that makes it harder to differentiate current user vs user from home timeline. I ended up having very ugly repeated code for both...
 
 
 ## Video Walkthrough
